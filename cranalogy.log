@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  30 AUG 2017 16:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  30 AUG 2017 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -269,35 +269,24 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-Runaway argument?
-{Department of Computer Science and Engineering, Faculty of Applied S\ETC.
-! Paragraph ended before \address was complete.
-<to be read again> 
-                   \par 
-l.26 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 (./cranalogy.aux)
 \openout1 = `cranalogy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 36.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -316,7 +305,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks25
 )
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 36.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -325,60 +314,65 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count108
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (./cranalogy.out) (./cranalogy.out)
 \@outlinefile=\write5
 \openout5 = `cranalogy.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
+(Font)              <7> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 39.
+(Font)              <5> on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Overfull \hbox (64.3072pt too wide) in paragraph at lines 38--38
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
 
-LaTeX Warning: Citation `Martin-90' on page 1 undefined on input line 108.
+LaTeX Warning: Citation `Martin-90' on page 1 undefined on input line 107.
+
+
+LaTeX Warning: Citation `Martin-90' on page 1 undefined on input line 109.
 
 
 LaTeX Warning: Citation `Martin-90' on page 1 undefined on input line 110.
 
 
-LaTeX Warning: Citation `Martin-90' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Citation `CastorPollux-92' on page 1 undefined on input line 111
+LaTeX Warning: Citation `CastorPollux-92' on page 1 undefined on input line 110
 .
 
 
 LaTeX Warning: Citation `Superman-Batman-Catwoman-Spiderman-00' on page 1 undef
-ined on input line 113.
+ined on input line 112.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 121.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-LaTeX Warning: Citation `speecon' on page 1 undefined on input line 122.
+LaTeX Warning: Citation `speecon' on page 1 undefined on input line 121.
 
 
-Overfull \hbox (4.26903pt too wide) in paragraph at lines 137--137
+Overfull \hbox (4.26903pt too wide) in paragraph at lines 136--136
 []\OT1/pcr/m/n/10 % \section{Language Resource References}[] 
  []
 
@@ -395,48 +389,48 @@ Package epstopdf Info: Source file: <image1.eps>
 (epstopdf)                    size: 39258 bytes
 (epstopdf)             Command: <repstopdf --outfile=image1-eps-converted-to.pd
 f image1.eps>
-(epstopdf)             \includegraphics on input line 154.
+(epstopdf)             \includegraphics on input line 153.
 Package epstopdf Info: Output file is already uptodate.
 
 <image1-eps-converted-to.pdf, id=112, 269.005pt x 226.8475pt>
 File: image1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image1-eps-converted-to.pdf>
-Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 154.
+Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 153.
 (pdftex.def)             Requested size: 134.50217pt x 113.42346pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 219.
+(Font)              <9> on input line 218.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 219.
+(Font)              <6> on input line 218.
 
-Underfull \hbox (badness 4886) in paragraph at lines 223--226
+Underfull \hbox (badness 4886) in paragraph at lines 222--225
 []\OT1/ptm/m/n/10 The Lan-gua-ge Re-sour-ce and Evalua-tion Con-fe-rence
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 274.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 273.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
 [][][]\OT1/ptm/m/n/9 The ISLRN num-ber is avail-able from
  []
 
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 289.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 288.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 289.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 288.
  [2 <./image1-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 293.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 292.
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 []\OT1/ptm/m/n/10 Invoke \OT1/pcr/m/n/10 bibtex \OT1/ptm/m/n/10 on the
  []
 
@@ -455,23 +449,23 @@ If that doesn't work, type  X <return>  to quit.
 
 )
 No file languageresource.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
 [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
  (./cranalogy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `cranalogy.out' has not changed.
 (rerunfilecheck)             Checksum: 932DBC3F707BBCAAA2E2D94723376614;1634.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
  ) 
 Here is how much of TeX's memory you used:
- 5916 strings out of 494985
- 87958 string characters out of 6180357
- 177978 words of memory out of 5000000
- 9005 multiletter control sequences out of 15000+600000
+ 5917 strings out of 494985
+ 87967 string characters out of 6180357
+ 179169 words of memory out of 5000000
+ 9006 multiletter control sequences out of 15000+600000
  23312 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  42i,10n,28p,332b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -480,7 +474,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on cranalogy.pdf (3 pages, 105512 bytes).
+Output written on cranalogy.pdf (3 pages, 106687 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
