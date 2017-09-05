@@ -26,45 +26,91 @@
 
 
 \abstract{
-Each article must include an abstract of 150 to 200 words in Times New Roman
-9 with interlinear spacing of 10 pt. The heading Abstract should be
-centred, font Times New Roman 10 bold. This short abstract will also be used
-for producing the Booklet of Abstracts (PDF) containing the abstracts of all
-papers presented at the Conference. \\ \newline \Keywords{keyword1, keyword2,
-keyword3} }
+Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
+We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
+We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new full-sized Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
+Results show that models are able to create meaningful word representation, however this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
+}
 
 \begin{document}
 
 \maketitleabstract
 
-\section{Extended Abstract}
+\section{Introduction}
 
-Each submitted abstract should be submitted on white A4 paper. The fully
-justified text should be formatted in two parallel columns, each 8.25 cm wide,
-and separated by a space of 0.63 cm. Left, right, and bottom margins should be
-1.9 cm and the top margin 2.5 cm. The font for the main body of the text should
-be Times New Roman 10 with interlinear spacing of 11 pt.
+Word representation based on distributional semantics \cite{bibid}, commonly referred to as word embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representation is to capture syntactic and semantic relationship between words. 
 
-\subsection{General Instructions for the Submitted Abstract}
+It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP applications, where word embeddings does not help much \cite{Andreas:2014}. 
 
-Each submitted abstract should be between \ul{a minimum of three and
-a maximum of four pages including figures}.
+Many methods have been proposed to learn such word vector representations \cite{}. Word embedding methods Word2Vec \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for word embeddings. Word representations made by these methods have been successfully adapted on variety of core NLP tasks.
 
-\section{Paper}
+Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order. From this family only Czech language has been covered in \cite{bibid}. 
 
-Each manuscript should be submitted on white A4 paper. The fully
-justified text should be formatted in two parallel columns, each 8.25 cm wide,
-and separated by a space of 0.63 cm. Left, right, and bottom margins should be
-1.9 cm. and the top margin 2.5 cm. The font for the main body of the text should
-be Times New Roman 10 with interlinear spacing of 12 pt.  Articles must be
-between 4 and 8 pages in length, regardless of the mode of presentation (oral
-or poster).
+In this paper, we focus on Croatian word embeddings. We
 
-\subsection{General Instructions for the Final Paper}
 
-Each paper is allocated between \ul{a minimum of four and a maximum of
-eight pages including figures}. The unprotected PDF files will appear in the
-on-line proceedings directly as received. Do not print the page number.
+
+
+
+\section{Related Work}
+
+There is a variety of datasets for measuring semantic relatedness between English words, such as \emph{WordSimilarity-353} \cite{ws353}, \emph{Rubenstein and Goodenough (RG)} \cite{RubensteinGoodenough65}, \emph{Rare-words} \cite{Luong-etal:conll13:morpho}, \emph{Word pair similarity in context} \cite{Huang:2012:IWR:2390524.2390645}, and many others.
+
+To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. \cite{neural network cr article} translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
+
+\section{Models}
+
+\subsection{Training data}
+
+\subsection{Parameters}
+
+
+
+\section{Corpus}
+
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabularx}{\columnwidth}{|l|X|}
+			
+			\hline
+			Level&Tools\\
+			\hline
+			Morphology & Pitrat Analyser\\
+			\hline
+			Syntax & LFG Analyser (C-Structure)\\
+			\hline
+			Semantics & LFG F-Structures + Sowa's\\
+			& Conceptual Graphs\\
+			\hline
+			
+		\end{tabularx}
+		\caption{The caption of the table}
+	\end{center}
+\end{table}
+
+\section{Experiments}
+
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabularx}{\columnwidth}{|l|X|}
+			
+			\hline
+			Level&Tools\\
+			\hline
+			Morphology & Pitrat Analyser\\
+			\hline
+			Syntax & LFG Analyser (C-Structure)\\
+			\hline
+			Semantics & LFG F-Structures + Sowa's\\
+			& Conceptual Graphs\\
+			\hline
+			
+		\end{tabularx}
+		\caption{The caption of the table}
+	\end{center}
+\end{table}
+
+\section{Conclusion}
 
 \section{Page Numbering}
 
@@ -167,25 +213,7 @@ The instructions for tables are the same as for figures.
 %\subsection{In-column tables}
 %An example of an in-column table is presented here.
 %
-\begin{table}[!h]
-\begin{center}
-\begin{tabularx}{\columnwidth}{|l|X|}
 
-      \hline
-      Level&Tools\\
-      \hline
-      Morphology & Pitrat Analyser\\
-      \hline
-      Syntax & LFG Analyser (C-Structure)\\
-      \hline
-     Semantics & LFG F-Structures + Sowa's\\
-     & Conceptual Graphs\\
-      \hline
-
-\end{tabularx}
-\caption{The caption of the table}
- \end{center}
-\end{table}
 
 %\subsection{Big tables}
 %
