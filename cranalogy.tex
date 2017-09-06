@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{soul}
+\usepackage{amssymb}
 % for eps graphics
 
 \usepackage{epstopdf}
@@ -28,7 +29,7 @@
 \abstract{
 Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
 We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
-We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new full-sized Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
+We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
 Results show that models are able to create meaningful word representation, however this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
 }
 
@@ -44,30 +45,69 @@ It was shown that the word vectors can be used for significant improving and sim
 
 Many methods have been proposed to learn such word vector representations \cite{}. Word embedding methods Word2Vec \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for word embeddings. Word representations made by these methods have been successfully adapted on variety of core NLP tasks.
 
-Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order. From this family only Czech language has been covered in \cite{bibid}. 
+Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
-In this paper, we focus on Croatian word embeddings. We
+In this paper, we focus on Croatian word embeddings. To be able to compare different word embeddings methods, we created two dataset based on original WordSim353\cite{bibid} and RG64\cite{bibid} translated to Croatian.
+Except the similarity between words, we would like to explore other semantic and syntactic properties hidden in word embeddings. A new evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
+Based on this popular evaluation scheme, we have produced a Croatian version of original Word2Vec analogy corpus in order to qualitatively compare the performance of different models. 
 
 
 
 
 
 \section{Related Work}
+Nowadays, word embeddings  are typically obtained as a product of training neural network-based language models. Language modeling is a classical NLP task of predicting the probability distribution over the "next" word. In these models a word embedding is a vector in $ \mathbb{R}^{n}	$, with the value of each dimension being a feature that weights the relation of the word with a "latent" aspect of the language. These features are jointly learned from plain unannotated text data. This principle is known as the \textit{distributional hypothesis}. The direct implication of this hypothesis is that the word meaning is related to the context where it usually occurs and thus it is possible to compare the meanings of two words by statistical comparisons of their contexts. This implication was confirmed by empirical tests carried out on human groups in \cite{RubensteinGoodenough65,Charles2000}. 
 
-There is a variety of datasets for measuring semantic relatedness between English words, such as \emph{WordSimilarity-353} \cite{ws353}, \emph{Rubenstein and Goodenough (RG)} \cite{RubensteinGoodenough65}, \emph{Rare-words} \cite{Luong-etal:conll13:morpho}, \emph{Word pair similarity in context} \cite{Huang:2012:IWR:2390524.2390645}, and many others.
+There is a variety of datasets for measuring semantic relatedness between English words, such as \emph{WordSimilarity-353} \cite{ws353}, \emph{Rubenstein and Goodenough (RG)} \cite{RubensteinGoodenough65}, \emph{Rare-words} \cite{Luong-etal:conll13:morpho}, \emph{Word pair similarity in context} \cite{Huang:2012:IWR:2390524.2390645}, and many others. Evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
 
-To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. \cite{neural network cr article} translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
+To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{neural network cr article} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
+There is only one analogy corpus representing Slavic family language - Czech word analogy corpus presented in \cite{DBLPSvobodaB16}. 
 
 \section{Models}
+We experimented with state-of-the-art models used for generating word embeddings. Neural network based models CBOW and Skipgram from Word2Vec \cite{mikolov2013efficient} tool and model GloVe that focuses more on the global statistics of the trained data. We have also tested the most recent Fast-Text tool that promises better score for morphologically rich languages.
 
+\subsection{CBOW} \label{sec:cbow}
+CBOW (Continuous Bag-of-Words) \cite{mikolov2013efficient} tries to predict the current word according to the small context window around the word. The architecture is similar to the feed-forward NNLP (Neural Network Language Model) which has been proposed in \cite{bengio2006neural}. The NNLM is computationally expensive between the projection and the hidden layer. Thus, CBOW proposed architecture, where the (non-linear) hidden layer is removed and projection layer is shared between all words. The word order in the context does not influence the projection (see Figure \ref{fig:cbow}). This architecture also proved low computational complexity.
+
+\subsection{Skip-gram} \label{sec:skip}
+Skip-gram architecture is similar to CBOW. Although instead of predicting the current word based on the context, it tries to predict a words context based on the word itself \cite{mikolov2013distributed}. Thus, intention of the Skip-gram model is to find word patterns that are useful for predicting the surrounding words within a certain range in a sentence  (see Figure \ref{fig:skip}). Skip-gram model estimates the syntactic properties of words slightly worse than the CBOW model, but it is much better for modeling the word semantics on English test set \cite{mikolov2013efficient} \cite{mikolov2013distributed}. Training of the Skipgram model does not involve dense matrix multiplications \ref{fig:skip} and that makes training also extremely efficient \cite{mikolov2013distributed}.
+
+\subsection{GloVe}
+GloVe (Global Vectors) \cite{pennington2014glove} model focuses more on the global statistics of the trained data. The main concept of this model is the observation that ratios of word-word co-occurrence probabilities have the potential for encoding meaning of words. This approach sequentially analyzes word contexts iterating on word windows across the corpus. The authors define $ P_{ij} = p(j|i) $ as the probability that the word $ w_j $ appears in the context of word $ w_i $. The authors
+
+\subsection{Fast-Text}
+FastText\cite{bojanowski2016enriching} combines concepts of CBOW (resp. Skip-Gram) architectures introduced earlier in Section \ref{sec:cbow} and \ref{sec:skip}. These include representing sentences with bag of words and bag of n-grams, as well as using subword information, and sharing information across classes through a hidden representation. 
+
+ 
 \subsection{Training data}
+We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia (dated 08-2017) and ... 
+
+Fo
+One Billion Word Benchmark \cite{DBLPChelbaMSGBK13}
+
+Number of documents, 
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabularx}{\columnwidth}{|l|X|X|X|}
+			
+			\hline
+			&Vocabulary&Vocabulary tf>5&Tokens\\
+			\hline
+			EN corpus& 793,471& & 829,250,940\\
+			CR WIKI& 793,471& & 829,250,940\\
+			\hline
+			
+		\end{tabularx}
+		\caption{The caption of the table}
+	\end{center}
+\end{table}
 
 \subsection{Parameters}
 
 
 
 \section{Corpus}
-
+Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically predicted one). 
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabularx}{\columnwidth}{|l|X|}
@@ -106,7 +146,48 @@ To the best of our knowledge, only small portion of recent studies attempted eva
 			\hline
 			
 		\end{tabularx}
-		\caption{The caption of the table}
+		\caption{Syntactic questions}
+	\end{center}
+\end{table}
+
+
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabularx}{\columnwidth}{|l|X|}
+			
+			\hline
+			Level&Tools\\
+			\hline
+			Morphology & Pitrat Analyser\\
+			\hline
+			Syntax & LFG Analyser (C-Structure)\\
+			\hline
+			Semantics & LFG F-Structures + Sowa's\\
+			& Conceptual Graphs\\
+			\hline
+			
+		\end{tabularx}
+		\caption{Semantic questions}
+	\end{center}
+\end{table}
+
+\begin{table}[!h]
+	\begin{center}
+		\begin{tabularx}{\columnwidth}{|l|X|}
+			
+			\hline
+			Level&Tools\\
+			\hline
+			Morphology & Pitrat Analyser\\
+			\hline
+			Syntax & LFG Analyser (C-Structure)\\
+			\hline
+			Semantics & LFG F-Structures + Sowa's\\
+			& Conceptual Graphs\\
+			\hline
+			
+		\end{tabularx}
+		\caption{Total score}
 	\end{center}
 \end{table}
 
@@ -334,12 +415,12 @@ language resources, the following steps need to be performed:
 \label{main:ref}
 
 \bibliographystyle{lrec}
-\bibliography{xample}
+\bibliography{cranalogy}
 
 
 \section{Language Resource References}
 \label{lr:ref}
 \bibliographystylelanguageresource{lrec}
-\bibliographylanguageresource{xample}
+\bibliographylanguageresource{cranalogy}
 
 \end{document}
