@@ -30,7 +30,7 @@
 Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
 We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
 We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
-Results show that models are able to create meaningful word representation, however this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
+Results show that models are able to create meaningful word representation. However, this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
 }
 
 \begin{document}
@@ -39,11 +39,9 @@ Results show that models are able to create meaningful word representation, howe
 
 \section{Introduction}
 
-Word representation based on distributional semantics \cite{bibid}, commonly referred to as word embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representation is to capture syntactic and semantic relationship between words. 
+Word representation based on distributional semantics \cite{bibid}, commonly referred to as Word Embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representation is to capture syntactic and semantic relationship between words. 
 
-It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP applications, where word embeddings does not help much \cite{Andreas:2014}. 
-
-Many methods have been proposed to learn such word vector representations \cite{}. Word embedding methods Word2Vec \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for word embeddings. Word representations made by these methods have been successfully adapted on variety of core NLP tasks.
+It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP applications, where Word Embeddings does not help much \cite{Andreas:2014}. 
 
 Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
@@ -62,6 +60,8 @@ There is a variety of datasets for measuring semantic relatedness between Englis
 
 To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{neural network cr article} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
 There is only one analogy corpus representing Slavic family language - Czech word analogy corpus presented in \cite{DBLPSvobodaB16}. 
+
+Many methods have been proposed to learn such word vector representations. One of the Neural Network based models for word vector representation which outperforms previous methods on word similarity tasks was introduced in \cite{Huang-2012}. Word Embeddings methods implemented in tool \emph{Word2Vec} \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for Word Embeddings. Word vector representations made by these methods have been successfully adapted on variety of core NLP tasks. Recent library \emph{FastText} \cite{bojanowski2016enriching} tool is derived from Word2Vec and enriches word embeddings vectors with subword information. 
 
 \section{Models}
 We experimented with state-of-the-art models used for generating word embeddings. Neural network based models CBOW and Skipgram from Word2Vec \cite{mikolov2013efficient} tool and model GloVe that focuses more on the global statistics of the trained data. We have also tested the most recent Fast-Text tool that promises better score for morphologically rich languages.
