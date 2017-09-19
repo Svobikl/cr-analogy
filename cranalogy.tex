@@ -29,7 +29,7 @@
 \abstract{
 Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
 We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
-We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
+We compared twohree popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
 Results show that models are able to create meaningful word representation. However, this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
 }
 
@@ -41,9 +41,9 @@ Results show that models are able to create meaningful word representation. Howe
 
 Word representation based on distributional semantics \cite{bibid}, commonly referred to as Word Embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representation is to capture syntactic and semantic relationship between words. 
 
-It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP applications, where Word Embeddings does not help much \cite{Andreas:2014}. 
+It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP taskapplications, where Word Embeddings does not help much \cite{Andreas:2014}. 
 
-Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
+Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus, de corpus, cz corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
 In this paper, we focus on Croatian word embeddings. To be able to compare different word embeddings methods, we created two dataset based on original WordSim353\cite{bibid} and RG64\cite{bibid} translated to Croatian.
 Except the similarity between words, we would like to explore other semantic and syntactic properties hidden in word embeddings. A new evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
@@ -107,7 +107,7 @@ Number of documents,
 
 
 \section{Corpus}
-Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically predicted one). 
+Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically the predicted one). 
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabularx}{\columnwidth}{|l|X|}
