@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  13 SEP 2017 13:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  19 SEP 2017 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -283,21 +283,21 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 (./cranalogy.aux)
 \openout1 = `cranalogy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -316,7 +316,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 37.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -325,129 +325,131 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count108
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./cranalogy.out) (./cranalogy.out)
 \@outlinefile=\write5
 \openout5 = `cranalogy.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-
-Overfull \hbox (64.3072pt too wide) in paragraph at lines 38--38
- [][] 
- []
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 42.
+
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 43.
 
 
 LaTeX Warning: Citation `Collobert08aunified' on page 1 undefined on input line
- 44.
+ 45.
 
 
 LaTeX Warning: Citation `DBLP:journals/corr/abs-1103-0398' on page 1 undefined 
-on input line 44.
+on input line 45.
 
 
-LaTeX Warning: Citation `Andreas:2014' on page 1 undefined on input line 44.
+LaTeX Warning: Citation `Andreas:2014' on page 1 undefined on input line 45.
 
 
-LaTeX Warning: Citation `it corpus' on page 1 undefined on input line 46.
+LaTeX Warning: Citation `it corpus' on page 1 undefined on input line 47.
 
 
-LaTeX Warning: Citation ` arabic corpus' on page 1 undefined on input line 46.
+LaTeX Warning: Citation ` arabic corpus' on page 1 undefined on input line 47.
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 48.
+LaTeX Warning: Citation ` de corpus' on page 1 undefined on input line 47.
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 48.
+LaTeX Warning: Citation ` cz corpus' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 49.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 49.
+e 50.
 
 
 LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 57.
+ine 58.
 
 
-LaTeX Warning: Citation `Charles2000' on page 1 undefined on input line 57.
+LaTeX Warning: Citation `Charles2000' on page 1 undefined on input line 58.
 
 
-LaTeX Warning: Citation `ws353' on page 1 undefined on input line 59.
+LaTeX Warning: Citation `ws353' on page 1 undefined on input line 60.
 
 
 LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 59.
+ine 60.
 
 
 LaTeX Warning: Citation `Luong-etal:conll13:morpho' on page 1 undefined on inpu
-t line 59.
+t line 60.
 
 
 LaTeX Warning: Citation `Huang:2012:IWR:2390524.2390645' on page 1 undefined on
- input line 59.
+ input line 60.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 59.
+e 60.
 
 
 LaTeX Warning: Citation `neural network cr article' on page 1 undefined on inpu
-t line 61.
+t line 62.
 
 
-LaTeX Warning: Citation `DBLPSvobodaB16' on page 1 undefined on input line 62.
+LaTeX Warning: Citation `DBLPSvobodaB16' on page 1 undefined on input line 63.
 
 
-LaTeX Warning: Citation `Huang-2012' on page 1 undefined on input line 64.
+LaTeX Warning: Citation `Huang-2012' on page 1 undefined on input line 65.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 64.
+e 65.
 
 
 LaTeX Warning: Citation `pennington2014glove' on page 1 undefined on input line
- 64.
+ 65.
 
 
 LaTeX Warning: Citation `bojanowski2016enriching' on page 1 undefined on input 
-line 64.
+line 65.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 67.
+e 68.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 70.
+e 71.
 
 
-LaTeX Warning: Citation `bengio2006neural' on page 1 undefined on input line 70
+LaTeX Warning: Citation `bengio2006neural' on page 1 undefined on input line 71
 .
 
 
-LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 70.
+LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 71.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -456,37 +458,37 @@ LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 70.
 ]
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 73.
+ine 74.
 
 
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 73.
+LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 74.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 2 undefined on input lin
-e 73.
+e 74.
 
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 73.
+ine 74.
 
 
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 73.
+LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 74.
 
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 73.
+ine 74.
 
 
 LaTeX Warning: Citation `pennington2014glove' on page 2 undefined on input line
- 76.
+ 77.
 
 
 LaTeX Warning: Citation `bojanowski2016enriching' on page 2 undefined on input 
-line 79.
+line 80.
 
 
-LaTeX Warning: Citation `DBLPChelbaMSGBK13' on page 2 undefined on input line 8
-6.
+LaTeX Warning: Citation `vsnajder2013building' on page 2 undefined on input lin
+e 84.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--100
@@ -503,89 +505,8 @@ Overfull \hbox (2.25291pt too wide) in paragraph at lines 100--100
 []|\OT1/ptm/m/n/10 829,250,940| 
  []
 
-[2]
-
-LaTeX Warning: Citation `Martin-90' on page 3 undefined on input line 234.
-
-
-LaTeX Warning: Citation `Martin-90' on page 3 undefined on input line 236.
-
-
-LaTeX Warning: Citation `Martin-90' on page 3 undefined on input line 237.
-
-
-LaTeX Warning: Citation `CastorPollux-92' on page 3 undefined on input line 237
-.
-
-
-LaTeX Warning: Citation `Superman-Batman-Catwoman-Spiderman-00' on page 3 undef
-ined on input line 239.
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 247.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-LaTeX Warning: Citation `speecon' on page 3 undefined on input line 248.
-
-
-Overfull \hbox (4.26903pt too wide) in paragraph at lines 263--263
-[]\OT1/pcr/m/n/10 % \section{Language Resource References}[] 
- []
-
-Package epstopdf Info: Source file: <image1.eps>
-(epstopdf)                    date: 2016-01-25 12:41:04
-(epstopdf)                    size: 395801 bytes
-(epstopdf)             Output file: <image1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-17 18:09:52
-(epstopdf)                    size: 39258 bytes
-(epstopdf)             Command: <repstopdf --outfile=image1-eps-converted-to.pd
-f image1.eps>
-(epstopdf)             \includegraphics on input line 280.
-Package epstopdf Info: Output file is already uptodate.
-<image1-eps-converted-to.pdf, id=160, 269.005pt x 226.8475pt>
-File: image1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use image1-eps-converted-to.pdf>
-Package pdftex.def Info: image1-eps-converted-to.pdf used on input line 280.
-(pdftex.def)             Requested size: 134.50217pt x 113.42346pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 331--334
-[]\OT1/ptm/m/n/10 The Lan-gua-ge Re-sour-ce and Evalua-tion Con-fe-rence
- []
-
-[3 <./image1-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 382.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 382.
-
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
-[][][]\OT1/ptm/m/n/9 The ISLRN num-ber is avail-able from
- []
-
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 397.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
-File: omspcr.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 397.
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 401.
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
-[]\OT1/ptm/m/n/10 Invoke \OT1/pcr/m/n/10 bibtex \OT1/ptm/m/n/10 on the
- []
 
 (./cranalogy.bbl
 
@@ -601,29 +522,28 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 )
-No file languageresource.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
-[4
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+ [2] [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (./cranalogy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `cranalogy.out' has not changed.
-(rerunfilecheck)             Checksum: 7F13D2A230A64B53D99B21E71012E690;1984.
+(rerunfilecheck)             Checksum: FFDCC890212D2E2C5D727A25918D0098;728.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 6263 strings out of 494985
- 91940 string characters out of 6180357
- 181205 words of memory out of 5000000
- 9316 multiletter control sequences out of 15000+600000
- 28032 words of font info for 64 fonts, out of 8000000 for 9000
+ 6112 strings out of 494985
+ 89792 string characters out of 6180357
+ 182121 words of memory out of 5000000
+ 9214 multiletter control sequences out of 15000+600000
+ 20215 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  42i,10n,28p,939b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -632,14 +552,12 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
-r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cranalogy.pdf (4 pages, 152219 bytes).
+w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cranalogy.pdf (3 pages, 91145 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
