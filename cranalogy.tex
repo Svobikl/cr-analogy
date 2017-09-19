@@ -59,7 +59,7 @@ Nowadays, word embeddings  are typically obtained as a product of training neura
 
 There is a variety of datasets for measuring semantic relatedness between English words, such as \emph{WordSimilarity-353} \cite{ws353}, \emph{Rubenstein and Goodenough (RG)} \cite{RubensteinGoodenough65}, \emph{Rare-words} \cite{Luong-etal:conll13:morpho}, \emph{Word pair similarity in context} \cite{Huang:2012:IWR:2390524.2390645}, and many others. Evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
 
-To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{neural network cr article} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
+To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{zuanovic2014experiments} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
 There is only one analogy corpus representing Slavic family language - Czech word analogy corpus presented in \cite{DBLPSvobodaB16}. 
 
 Many methods have been proposed to learn such word vector representations. One of the Neural Network based models for word vector representation which outperforms previous methods on word similarity tasks was introduced in \cite{Huang-2012}. Word Embeddings methods implemented in tool \emph{Word2Vec} \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for Word Embeddings. Word vector representations made by these methods have been successfully adapted on variety of core NLP tasks. Recent library \emph{FastText} \cite{bojanowski2016enriching} tool is derived from Word2Vec and enriches word embeddings vectors with subword information. 
@@ -85,7 +85,7 @@ We trained our models on two datasets in the Croatian language. We made the enti
 
 For English version of data, we used Wikipedia dump from 02-2017. This dump has xy tokens. 
 
-Number of documents, 
+
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabularx}{\columnwidth}{|l|X|X|X|}
@@ -107,7 +107,13 @@ Number of documents,
 
 
 \section{Corpus}
-Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically predicted one). 
+Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically the predicted one). 
+
+Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions. Number of semantic questions is xy and has following categories: 
+
+\begin{itemize}
+	\item[-] description
+\end{itemize}
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabularx}{\columnwidth}{|l|X|}
@@ -194,14 +200,12 @@ Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two
 
 \section{Conclusion}
 
-Your submission of a finalised contribution for inclusion in the LREC
-proceedings automatically assigns the above-mentioned copyright to ELRA.
-
+\url{https://github.com/Svobikl/cr-analogy}
 
 \section{Acknowledgements}
 
-Place all acknowledgements (including those concerning research grants and
-funding) in a separate section at the end of the article.
+This work was supported by the project LO1506 of the Czech Ministry of Education, Youth and Sports and by Grant No. SGS-2016-018 Data and Software Engineering for Advanced Applications.
+Computational resources were provided by the CESNET LM2015042 and the CERIT Scientific Cloud LM2015085, provided under the programme "Projects of Large Research, Development, and Innovations Infrastructures.
 
 % \nocite{*}
 \section{Bibliographical References}
