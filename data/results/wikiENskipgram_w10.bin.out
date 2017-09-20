@@ -1,0 +1,115 @@
+> Mikolov's, word analogy test:
+capital-common-countries:95.85% (485/506)
+capital-world:93.93% (1763/1877)
+currency:3.70% (2/54)
+city-in-state:74.67% (1595/2136)
+family:77.78% (266/342)
+gram1-adjective-to-adverb:32.15% (209/650)
+gram2-opposite:42.08% (101/240)
+gram3-comparative:68.71% (639/930)
+gram4-superlative:44.81% (207/462)
+gram5-present-participle:61.70% (501/812)
+gram6-nationality-adjective:99.78% (1368/1371)
+gram7-past-tense:59.16% (788/1332)
+gram8-plural:82.76% (821/992)
+gram9-plural-verbs:51.17% (307/600)
+---------
+total: 73.57% (9052/12304)
+semantics: 83.64% (4111/4915)
+syntax: 66.87% (4941/7389)
+---------
+Other similarity tests: 
+> Wordsim-353 evaluation (spearman)= 0.64733514096 
+> MC-28 evaluation (spearman)= 0.821186203537 
+> RG-65 evaluation (spearman)= 0.78267806187 
+> Simlex-999 evaluation (spearman)= 0.336816475055 
+> Rare-words evaluation (spearman)= 0.408939441042 
+
+
+RW OOV:
+2017-03-20 10:30:03,149 : ERROR : Word noncivilized was not found
+2017-03-20 10:30:03,156 : ERROR : Word re-argue was not found
+2017-03-20 10:30:03,157 : ERROR : Word containerful was not found
+2017-03-20 10:30:03,161 : ERROR : Word extroversive was not found
+2017-03-20 10:30:03,167 : ERROR : Word chronologize was not found
+2017-03-20 10:30:03,171 : ERROR : Word wholeheartedness was not found
+2017-03-20 10:30:03,174 : ERROR : Word amazings was not found
+2017-03-20 10:30:03,176 : ERROR : Word amazings was not found
+2017-03-20 10:30:03,178 : ERROR : Word adventism was not found
+2017-03-20 10:30:03,179 : ERROR : Word icelandic was not found
+2017-03-20 10:30:03,182 : ERROR : Word scandinavian was not found
+2017-03-20 10:30:03,183 : ERROR : Word speculativeness was not found
+2017-03-20 10:30:03,185 : ERROR : Word monsignori was not found
+2017-03-20 10:30:03,187 : ERROR : Word refered was not found
+2017-03-20 10:30:03,190 : ERROR : Word refered was not found
+2017-03-20 10:30:03,191 : ERROR : Word containerful was not found
+2017-03-20 10:30:03,193 : ERROR : Word cosigns was not found
+2017-03-20 10:30:03,195 : ERROR : Word cosigns was not found
+2017-03-20 10:30:03,196 : ERROR : Word undisputable was not found
+2017-03-20 10:30:03,198 : ERROR : Word circumvolution was not found
+2017-03-20 10:30:03,202 : ERROR : Word unattainableness was not found
+2017-03-20 10:30:03,205 : ERROR : Word walloper was not found
+2017-03-20 10:30:03,211 : ERROR : Word insatiate was not found
+2017-03-20 10:30:03,216 : ERROR : Word unstuff was not found
+2017-03-20 10:30:03,219 : ERROR : Word nonindulgent was not found
+2017-03-20 10:30:03,222 : ERROR : Word scandinavian was not found
+2017-03-20 10:30:03,225 : ERROR : Word pedaler was not found
+2017-03-20 10:30:03,231 : ERROR : Word changeableness was not found
+2017-03-20 10:30:03,234 : ERROR : Word reorientate was not found
+2017-03-20 10:30:03,239 : ERROR : Word momentousness was not found
+2017-03-20 10:30:03,241 : ERROR : Word containerful was not found
+2017-03-20 10:30:03,242 : ERROR : Word brand-newness was not found
+2017-03-20 10:30:03,244 : ERROR : Word internationaler was not found
+2017-03-20 10:30:03,246 : ERROR : Word lustrate was not found
+2017-03-20 10:30:03,251 : ERROR : Word unvariedness was not found
+2017-03-20 10:30:03,254 : ERROR : Word americanize was not found
+2017-03-20 10:30:03,257 : ERROR : Word brittany was not found
+2017-03-20 10:30:03,258 : ERROR : Word outshout was not found
+2017-03-20 10:30:03,260 : ERROR : Word goldplated was not found
+2017-03-20 10:30:03,262 : ERROR : Word odorize was not found
+2017-03-20 10:30:03,264 : ERROR : Word greenly was not found
+2017-03-20 10:30:03,265 : ERROR : Word greenly was not found
+2017-03-20 10:30:03,268 : ERROR : Word monoatomic was not found
+2017-03-20 10:30:03,270 : ERROR : Word monoatomic was not found
+2017-03-20 10:30:03,273 : ERROR : Word sermonize was not found
+2017-03-20 10:30:03,276 : ERROR : Word mccarthyism was not found
+2017-03-20 10:30:03,279 : ERROR : Word incommutable was not found
+2017-03-20 10:30:03,281 : ERROR : Word disgruntle was not found
+2017-03-20 10:30:03,283 : ERROR : Word unassertiveness was not found
+2017-03-20 10:30:03,286 : ERROR : Word short-change was not found
+2017-03-20 10:30:03,290 : ERROR : Word corespondent was not found
+2017-03-20 10:30:03,291 : ERROR : Word duplicable was not found
+2017-03-20 10:30:03,296 : ERROR : Word unskillfulness was not found
+2017-03-20 10:30:03,300 : ERROR : Word caesarism was not found
+2017-03-20 10:30:03,302 : ERROR : Word christianise was not found
+2017-03-20 10:30:03,305 : ERROR : Word liverpools was not found
+2017-03-20 10:30:03,307 : ERROR : Word unparented was not found
+2017-03-20 10:30:03,313 : ERROR : Word ukrainians was not found
+2017-03-20 10:30:03,316 : ERROR : Word kazakhstani was not found
+2017-03-20 10:30:03,318 : ERROR : Word balminess was not found
+2017-03-20 10:30:03,320 : ERROR : Word nobelist was not found
+2017-03-20 10:30:03,324 : ERROR : Word bendability was not found
+2017-03-20 10:30:03,326 : ERROR : Word spiritize was not found
+2017-03-20 10:30:03,329 : ERROR : Word communicativeness was not found
+2017-03-20 10:30:03,331 : ERROR : Word spiritualize was not found
+2017-03-20 10:30:03,335 : ERROR : Word microphallus was not found
+2017-03-20 10:30:03,339 : ERROR : Word bastardize was not found
+2017-03-20 10:30:03,342 : ERROR : Word insecureness was not found
+2017-03-20 10:30:03,343 : ERROR : Word churchs was not found
+2017-03-20 10:30:03,345 : ERROR : Word rompers was not found
+2017-03-20 10:30:03,346 : ERROR : Word rompers was not found
+2017-03-20 10:30:03,348 : ERROR : Word ropewalker was not found
+2017-03-20 10:30:03,350 : ERROR : Word cross-index was not found
+2017-03-20 10:30:03,351 : ERROR : Word discoverys was not found
+2017-03-20 10:30:03,353 : ERROR : Word discoverys was not found
+2017-03-20 10:30:03,354 : ERROR : Word palestinians was not found
+2017-03-20 10:30:03,355 : ERROR : Word nondescripts was not found
+2017-03-20 10:30:03,358 : ERROR : Word negociate was not found
+2017-03-20 10:30:03,360 : ERROR : Word chronologize was not found
+2017-03-20 10:30:03,365 : ERROR : Word transubstantiate was not found
+2017-03-20 10:30:03,367 : ERROR : Word londoners was not found
+2017-03-20 10:30:03,370 : ERROR : Word latinist was not found
+2017-03-20 10:30:03,372 : ERROR : Word containerful was not found
+2017-03-20 10:30:03,375 : ERROR : Word animalize was not found
+2017-03-20 10:30:03,377 : ERROR : Word astringe was not found
+2017-03-20 10:30:03,381 : ERROR : Word antitoxic was not found

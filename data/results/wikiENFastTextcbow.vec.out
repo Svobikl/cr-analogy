@@ -1,0 +1,26 @@
+> Mikolov's, word analogy test:
+capital-common-countries:85.97% (435/506)
+capital-world:81.46% (1529/1877)
+currency:0.00% (0/54)
+city-in-state:54.63% (1167/2136)
+family:80.70% (276/342)
+gram1-adjective-to-adverb:75.08% (488/650)
+gram2-opposite:67.08% (161/240)
+gram3-comparative:88.39% (822/930)
+gram4-superlative:77.71% (359/462)
+gram5-present-participle:84.36% (685/812)
+gram6-nationality-adjective:94.60% (1297/1371)
+gram7-past-tense:56.91% (758/1332)
+gram8-plural:94.56% (938/992)
+gram9-plural-verbs:84.67% (508/600)
+---------
+total: 76.58% (9423/12304)
+semantics: 69.32% (3407/4915)
+syntax: 81.42% (6016/7389)
+---------
+Other similarity tests: 
+> Wordsim-353 evaluation (spearman)= 0.44642758132 
+> MC-28 evaluation (spearman)= 0.69678428273 
+> RG-65 evaluation (spearman)= 0.736499335018 
+> Simlex-999 evaluation (spearman)= 0.387693304674 
+> Rare-words evaluation (spearman)= 0.350359295843 

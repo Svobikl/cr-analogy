@@ -81,9 +81,9 @@ FastText\cite{bojanowski2016enriching} combines concepts of CBOW (resp. Skip-Gra
 
  
 \subsection{Training data}
-We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia (dated 08-2017), this corpus has xy tokens. We merged data from Wikipedia with Croatian corpus presented in \cite{vsnajder2013building} that has 1.2B tokens. Resulting corpus has xy tokens and xy sentences. 
+We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia (dated 08-2017), this corpus has xy tokens. We merged data from Wikipedia with Croatian corpus presented in \cite{vsnajder2013building} that has 1.2B tokens. Resulting corpus has xy tokens and xy sentences. Such corpus has vocabulary of xy words composed of words with at least 10 occurences.
 
-For English version of data, we used Wikipedia dump from 02-2017. This dump has xy tokens. 
+For English version of data, we used Wikipedia dump from 02-2017. This dump has xy tokens and vocabulary of xy words. 
 
 
 \begin{table}[!h]
@@ -94,11 +94,11 @@ For English version of data, we used Wikipedia dump from 02-2017. This dump has 
 			&Vocabulary&Vocabulary tf>5&Tokens\\
 			\hline
 			EN corpus& 793,471& & 829,250,940\\
-			CR WIKI& 793,471& & 829,250,940\\
+			HR corpus& 793,471& & 829,250,940\\
 			\hline
 			
 		\end{tabularx}
-		\caption{The caption of the table}
+		\caption{Properties of Croatian training data corpus.}
 	\end{center}
 \end{table}
 
@@ -109,12 +109,31 @@ For English version of data, we used Wikipedia dump from 02-2017. This dump has 
 \section{Corpus}
 Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically the predicted one). 
 
-Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions. Number of semantic questions is xy and has following xy relations each consisting around 30 - 100 word pairs: 
+Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions.\\
+
+Semantic questions are divided into 7 group each, having around 30 - 100 word question pairs. Combination of each question pairs gives overall xy semantics questions:  
 
 \begin{itemize}
 	\item[-] capital-common-countries
-	\item[-] capital-common-countries
+	\item[-] chemical_elements
+	\item[-] city_state
+	\item[-] city_state_USA
+	\item[-] currency_shortcut
+	\item[-] eu-cities-states
+	\item[-] family
 \end{itemize}
+
+Syntactic part of corpus is divided into xy group, consisting of xy questions: 
+\begin{itemize}
+	\item[-] gram0-jobs
+	\item[-] gram1-adjective-to/a
+	\item[-] city_state
+	\item[-] city_state_USA
+	\item[-] currency_shortcut
+	\item[-] eu-cities-states
+	\item[-] family
+\end{itemize}
+
 \begin{table}[!h]
 	\begin{center}
 		\begin{tabularx}{\columnwidth}{|l|X|}
