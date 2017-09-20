@@ -1,0 +1,94 @@
+    def accuracy(self, questions, restrict_vocab=30000, most_similar=most_similar, case_insensitive=True):
+        """
+        Compute accuracy of the model. `questions` is a filename where lines are
+        4-tuples of words, split into sections by ": SECTION NAME" lines.
+        See questions-words.txt in https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/word2vec/source-archive.zip for an example.
+
+        The accuracy is reported (=printed to log and returned as a list) for each
+        section separately, plus there's one aggregate summary at the end.
+
+        Use `restrict_vocab` to ignore all questions containing a word not in the first `restrict_vocab`
+        words (default 30,000). This may be meaningful if you've sorted the vocabulary by descending frequency.
+        In case `case_insensitive` is True, the first `restrict_vocab` words are taken first, and then
+        case normalization is performed.
+
+        Use `case_insensitive` to convert all words in questions and vocab to their uppercase form before
+        evaluating the accuracy (default True). Useful in case of case-mismatch between training tokens
+        and question words. In case of multiple case variants of a single word, the vector for the first
+        occurrence (also the most frequent if vocabulary is sorted) is taken.
+
+        This method corresponds to the `compute-accuracy` script of the original C word2vec.
+
+        """
+        ok_vocab = [(w, self.vocab[w]) for w in self.index2word[:restrict_vocab]]
+        ok_vocab = dict((w.upper(), v) for w, v in reversed(ok_vocab)) if case_insensitive else dict(ok_vocab)
+        NumQuestions = 0
+        OOVNotFound = 0
+        synQuestions = 0
+        syntacs = True
+        sections, section = [], None
+        for line_no, line in enumerate(utils.smart_open(questions)):
+            # TODO: use level3 BLAS (=evaluate multiple questions at once), for speed
+            line = utils.to_unicode(line)
+            if line.startswith(': '):
+                # a new section starts => store the old section
+                if section:
+                    sections.append(section)
+                    self.log_accuracy(section)
+                section = {'section': line.lstrip(': ').strip(), 'correct': [], 'incorrect': []}
+                if line.startswith(': gram'):
+                    syntacs = True
+                else:
+                    syntacs = False
+            else:
+                if not section:
+                    raise ValueError("missing section header before line #%i in %s" % (line_no, questions))
+                try:
+                    if case_insensitive:
+                        a, b, c, expected = [word.upper() for word in line.split()]
+                    else:
+                        a, b, c, expected = [word for word in line.split()]
+                    NumQuestions = NumQuestions + 1
+                    if (syntacs):
+                        synQuestions = synQuestions + 1
+                except:
+                    logger.info("skipping invalid line #%i in %s" % (line_no, questions))
+                    continue
+                if a not in ok_vocab or b not in ok_vocab or c not in ok_vocab or expected not in ok_vocab:
+                    logger.debug("skipping line #%i with OOV words: %s" % (line_no, line.strip()))
+                    OOVNotFound = OOVNotFound + 1
+                    continue
+
+                original_vocab = self.vocab
+                self.vocab = ok_vocab
+                ignore = set([a, b, c])  # input words to be ignored
+                predicted = None
+                # find the most likely prediction, ignoring OOV words and input words
+                sims = most_similar(self, positive=[b, c], negative=[a], topn=False, restrict_vocab=restrict_vocab)
+                self.vocab = original_vocab
+                for index in matutils.argsort(sims, reverse=True):
+                    predicted = self.index2word[index].upper() if case_insensitive else self.index2word[index]
+                    if predicted in ok_vocab and predicted not in ignore:
+                        if predicted != expected:
+                            logger.debug("%s: expected %s, predicted %s", line.strip(), expected, predicted)
+                        break
+                if predicted == expected:
+                    section['correct'].append((a, b, c, expected))
+                else:
+                    section['incorrect'].append((a, b, c, expected))
+        if section:
+            # store the last section, too
+            sections.append(section)
+            self.log_accuracy(section)
+
+        total = {
+            'section': 'total',
+            'correct': sum((s['correct'] for s in sections), []),
+            'incorrect': sum((s['incorrect'] for s in sections), []),
+            'questions_total': NumQuestions,
+            'OOV_questions': OOVNotFound,
+            'syn_questions': synQuestions,
+        }
+        self.log_accuracy(total)
+        sections.append(total)
+        return sections 

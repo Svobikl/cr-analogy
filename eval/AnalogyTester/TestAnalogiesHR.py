@@ -19,7 +19,7 @@ sys.setdefaultencoding('UTF8')
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-modelFile = "/media/data/korpusy/Trained/categories/cz/new2.bin"
+modelFile = "/media/data/korpusy/Croatian/HR-vectors-cbowL.txt"
 if __name__ == '__main__':
 
     parser = optparse.OptionParser(usage="%prog [OPTIONS]")
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     logging.info("Loading model")
     model = Word2Vec.load_word2vec_format(modelFile,binary=False, encoding='utf8')
     #model.save_word2vec_format('/media/data/korpusy/Trained/GoogleNews-vectors-negative300.txt', binary=False)
-    acc =model.accuracy("/media/data/korpusy/Trained/categories/czech_emb_corpus_no_phrase.txt")
+    acc =model.accuracy("/home/svobik/Documents/ELREC/cr-analogy/data/corpus/analogy_corpus/corpus.txt", restrict_vocab=300000)
 
     totalCorr = 0
     total = 0
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     syntacticTotal =0
     fw = open(modelFile+".out", "w")
 
-    fw.write("> Svobiks's, word analogy test:\n")
+    fw.write("> Croatian, word analogy test:\n")
     for item in acc[:-1]:
         section= item['section']
 
@@ -63,6 +63,9 @@ if __name__ == '__main__':
     fw.write("total: %.2f%% (%d/%d)\n" % ((float(totalCorr)/float(total) * 100.0),totalCorr,total))
     fw.write("semantics: %.2f%% (%d/%d)\n" % ((float(semantics)/float(semanticsTotal) * 100.0),semantics,semanticsTotal))
     fw.write("syntax: %.2f%% (%d/%d)\n" % ((float(syntactic)/float(syntacticTotal) * 100.0),syntactic,syntacticTotal))
+    fw.write("---------\n")
+    fw.write("Questions counter:")
+    fw.write("questions OOV rate (%d,%d)\n" % (item['questions_total'],item['questions_total'],item['OOV_questions']))
     fw.write("---------\n")
     fw.write("Other similarity tests: \n")
     wordsim = word_similarity.WordSimilarity("wordsim353-hr")

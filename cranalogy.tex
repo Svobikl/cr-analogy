@@ -81,7 +81,7 @@ FastText\cite{bojanowski2016enriching} combines concepts of CBOW (resp. Skip-Gra
 
  
 \subsection{Training data}
-We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia (dated 08-2017), this corpus has xy tokens. We merged data from Wikipedia with Croatian corpus presented in \cite{vsnajder2013building} that has 1.2B tokens. Resulting corpus has xy tokens and xy sentences. Such corpus has vocabulary of xy words composed of words with at least 10 occurences.
+We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia - dated 08-2017 with approximately 275,000 articles. We have tokenized the text, removed nonalphanumeric tokens and extracted only sentences with at least 5 tokens. Resulting corpus has xy tokens. We merged data from Wikipedia with Croatian corpus presented in \cite{vsnajder2013building} that has 1.2B tokens. Resulting corpus has xy tokens and xy sentences. Such corpus has vocabulary of xy words with at least 10 occurences.
 
 For English version of data, we used Wikipedia dump from 02-2017. This dump has xy tokens and vocabulary of xy words. 
 
@@ -115,24 +115,33 @@ Semantic questions are divided into 7 group each, having around 30 - 100 word qu
 
 \begin{itemize}
 	\item[-] capital-common-countries
-	\item[-] chemical_elements
-	\item[-] city_state
-	\item[-] city_state_USA
-	\item[-] currency_shortcut
+	\item[-] chemical-elements
+	\item[-] city-state
+	\item[-] city-state-USA
+	\item[-] currency-shortcut
 	\item[-] eu-cities-states
 	\item[-] family
 \end{itemize}
 
 Syntactic part of corpus is divided into xy group, consisting of xy questions: 
 \begin{itemize}
-	\item[-] gram0-jobs
-	\item[-] gram1-adjective-to/a
-	\item[-] city_state
-	\item[-] city_state_USA
-	\item[-] currency_shortcut
-	\item[-] eu-cities-states
-	\item[-] family
+	\item[-] jobs
+	\item[-] adjective-to-adverb
+	\item[-] opposite
+	\item[-] comparative
+	\item[-] superlative
+	\item[-] nationality-man
+	\item[-] nationality-female
+	\item[-] past-tense
+	\item[-] plural
+	\item[-] nouns-antonyms
+	\item[-] adjectives-antonyms
+	\item[-] verbs-antonyms
+	\item[-] verbs-pastToFemale
+	\item[-] verbs-pastToMale
 \end{itemize}
+
+
 
 \begin{table}[!h]
 	\begin{center}
