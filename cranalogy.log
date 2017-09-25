@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  20 SEP 2017 18:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  25 SEP 2017 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,176 +280,294 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count102
+Package caption Info: hyperref package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count103
+\c@subtable=\count104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
+Package: ctable 2013/12/19 v1.27 ctable package for \ flexible typesetting of t
+able and figure floats using key/value directives
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+\XKV@depth=\count105
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count110
+\rotFPtop=\skip48
+\rotFPbot=\skip49
+\rot@float@box=\box26
+\rot@mess@toks=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
+
+)
+\@ctblframesep=\dimen139
+\@defaultctblframesep=\dimen140
+\@ctblframerule=\dimen141
+\@defaultctblframerule=\dimen142
+\@ctblwidth=\dimen143
+\@defaultctblwidth=\dimen144
+\@ctblcaptionskip=\dimen145
+\@defaultctblcaptionskip=\dimen146
+\@ctblmaxwidth=\dimen147
+\@defaultctblmaxwidth=\dimen148
+\@ctblmincapwidth=\dimen149
+\@defaultctblmincapwidth=\dimen150
+\@ctblfooterwidth=\dimen151
+\@defaultctblfooterwidth=\dimen152
+\@ctblw=\dimen153
+\@ctblfloatwidth=\dimen154
+\@ctbloldsep=\dimen155
+\@ctbloldrule=\dimen156
+\ctbl@t=\box27
+\@ctblcurftwidth=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen158
+)
 (./cranalogy.aux)
 \openout1 = `cranalogy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 42.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen119
-\scratchbox=\box26
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen120
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count111
+\scratchdimen=\dimen159
+\scratchbox=\box28
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen160
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks29
 )
-\AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 37.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 42.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count108
+\c@section@level=\count117
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./cranalogy.out) (./cranalogy.out)
 \@outlinefile=\write5
 \openout5 = `cranalogy.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 43.
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 48.
 
 
 LaTeX Warning: Citation `Collobert08aunified' on page 1 undefined on input line
- 45.
+ 50.
 
 
 LaTeX Warning: Citation `DBLP:journals/corr/abs-1103-0398' on page 1 undefined 
-on input line 45.
+on input line 50.
 
 
-LaTeX Warning: Citation `Andreas:2014' on page 1 undefined on input line 45.
+LaTeX Warning: Citation `Andreas:2014' on page 1 undefined on input line 50.
 
 
-LaTeX Warning: Citation `it corpus' on page 1 undefined on input line 47.
+LaTeX Warning: Citation `it_corpus' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation ` arabic corpus' on page 1 undefined on input line 47.
+LaTeX Warning: Citation ` arabic_corpus' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation ` de corpus' on page 1 undefined on input line 47.
+LaTeX Warning: Citation ` de_corpus' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation ` cz corpus' on page 1 undefined on input line 47.
+LaTeX Warning: Citation ` cz_corpus' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 49.
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 54.
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 49.
+LaTeX Warning: Citation `bibid' on page 1 undefined on input line 54.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 50.
+e 55.
 
 
 LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 58.
+ine 63.
 
 
-LaTeX Warning: Citation `Charles2000' on page 1 undefined on input line 58.
+LaTeX Warning: Citation `Charles2000' on page 1 undefined on input line 63.
 
 
-LaTeX Warning: Citation `ws353' on page 1 undefined on input line 60.
+LaTeX Warning: Citation `ws353' on page 1 undefined on input line 65.
 
 
 LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 60.
+ine 65.
 
 
 LaTeX Warning: Citation `Luong-etal:conll13:morpho' on page 1 undefined on inpu
-t line 60.
+t line 65.
 
 
 LaTeX Warning: Citation `Huang:2012:IWR:2390524.2390645' on page 1 undefined on
- input line 60.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 60.
-
-
-LaTeX Warning: Citation `zuanovic2014experiments' on page 1 undefined on input 
-line 62.
-
-
-LaTeX Warning: Citation `DBLPSvobodaB16' on page 1 undefined on input line 63.
-
-
-LaTeX Warning: Citation `Huang-2012' on page 1 undefined on input line 65.
+ input line 65.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
 e 65.
 
 
+LaTeX Warning: Citation `zuanovic2014experiments' on page 1 undefined on input 
+line 67.
+
+
+LaTeX Warning: Citation `DBLPSvobodaB16' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation `Huang-2012' on page 1 undefined on input line 70.
+
+
+LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
+e 70.
+
+
 LaTeX Warning: Citation `pennington2014glove' on page 1 undefined on input line
- 65.
+ 70.
 
 
 LaTeX Warning: Citation `bojanowski2016enriching' on page 1 undefined on input 
-line 65.
+line 70.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 68.
+e 73.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 71.
+e 76.
 
 
-LaTeX Warning: Citation `bengio2006neural' on page 1 undefined on input line 71
+LaTeX Warning: Citation `bengio2006neural' on page 1 undefined on input line 76
 .
 
 
-LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 71.
+LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 76.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -458,59 +576,80 @@ LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 71.
 ]
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 74.
+ine 79.
 
 
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 74.
+LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 79.
 
 
 LaTeX Warning: Citation `mikolov2013efficient' on page 2 undefined on input lin
-e 74.
+e 79.
 
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 74.
+ine 79.
 
 
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 74.
+LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 79.
 
 
 LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 74.
-
-
-LaTeX Warning: Citation `pennington2014glove' on page 2 undefined on input line
- 77.
+ine 79.
 
 
 LaTeX Warning: Citation `bojanowski2016enriching' on page 2 undefined on input 
-line 80.
+line 85.
 
 
 LaTeX Warning: Citation `vsnajder2013building' on page 2 undefined on input lin
-e 84.
+e 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/ptm/m/n/10 Vocabulary
  []
 
 
-Overfull \hbox (2.43956pt too wide) in paragraph at lines 100--100
+Overfull \hbox (2.43956pt too wide) in paragraph at lines 107--107
 []|\OT1/ptm/m/n/10 829,250,940| 
  []
 
 
-Overfull \hbox (2.43956pt too wide) in paragraph at lines 100--100
+Overfull \hbox (2.43956pt too wide) in paragraph at lines 107--107
 []|\OT1/ptm/m/n/10 829,250,940| 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Overfull \hbox (7.1392pt too wide) in paragraph at lines 193--193
+[]|\OT1/ptm/b/n/10 CBOW| 
+ []
+
+
+Overfull \hbox (13.36908pt too wide) in paragraph at lines 193--193
+[]|\OT1/ptm/b/n/10 fastText-
+ []
+
+
+Overfull \hbox (13.36908pt too wide) in paragraph at lines 193--193
+[]|\OT1/ptm/b/n/10 fastText-
+ []
+
+
+Overfull \hbox (7.1392pt too wide) in paragraph at lines 193--193
+\OT1/ptm/b/n/10 CBOW| 
+ []
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
+Overfull \hbox (9.67738pt too wide) in alignment at lines 219--219
+[][][][] 
  []
 
 
@@ -522,51 +661,48 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 270.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 232.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [2] (./cranalogy.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [3
+) (./cranalogy.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
  (./cranalogy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `cranalogy.out' has not changed.
-(rerunfilecheck)             Checksum: FFDCC890212D2E2C5D727A25918D0098;728.
+(rerunfilecheck)             Checksum: C34C249DFF17FF01954C867236ACA5BD;673.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 6147 strings out of 494985
- 90289 string characters out of 6180357
- 185121 words of memory out of 5000000
- 9244 multiletter control sequences out of 15000+600000
+ 8237 strings out of 494985
+ 123556 string characters out of 6180357
+ 246645 words of memory out of 5000000
+ 11289 multiletter control sequences out of 15000+600000
  20730 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,9n,28p,939b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,75p,939b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cranalogy.pdf (3 pages, 102030 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cranalogy.pdf (3 pages, 81243 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

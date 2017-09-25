@@ -13,6 +13,11 @@
 
 \usepackage{hyperref}
 \usepackage{xstring}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{alltt}
+\usepackage{ctable}
+\usepackage{multirow}
 
 \newcommand{\secref}[1]{\StrSubstitute{\getrefnumber{#1}}{.}{ }}
 
@@ -30,7 +35,7 @@
 \abstract{
 Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
 We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
-We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG64 corpuses to Croatian and made basic semantic measurements.\\
+We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG65 corpuses to Croatian and made basic semantic measurements.\\
 Results show that models are able to create meaningful word representation. However, this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
 }
 
@@ -44,9 +49,9 @@ Word representation based on distributional semantics \cite{bibid}, commonly ref
 
 It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP tasks, where Word Embeddings does not help much \cite{Andreas:2014}. 
 
-Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it corpus, arabic corpus, de corpus, cz corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
+Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it_corpus, arabic_corpus, de_corpus, cz_corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
-In this paper, we focus on Croatian word embeddings. To be able to compare different word embeddings methods, we created two dataset based on original WordSim353\cite{bibid} and RG64\cite{bibid} translated to Croatian.
+In this paper, we focus on Croatian word embeddings. To be able to compare different word embeddings methods, we created two dataset based on original WordSim353\cite{bibid} and RG65\cite{bibid} translated to Croatian.
 Except the similarity between words, we would like to explore other semantic and syntactic properties hidden in word embeddings. A new evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
 Based on this popular evaluation scheme, we have produced a Croatian version of original Word2Vec analogy corpus in order to qualitatively compare the performance of different models. 
 
@@ -73,8 +78,8 @@ CBOW (Continuous Bag-of-Words) \cite{mikolov2013efficient} tries to predict the 
 \subsection{Skip-gram} \label{sec:skip}
 Skip-gram architecture is similar to CBOW. Although instead of predicting the current word based on the context, it tries to predict a words context based on the word itself \cite{mikolov2013distributed}. Thus, intention of the Skip-gram model is to find word patterns that are useful for predicting the surrounding words within a certain range in a sentence  (see Figure \ref{fig:skip}). Skip-gram model estimates the syntactic properties of words slightly worse than the CBOW model, but it is much better for modeling the word semantics on English test set \cite{mikolov2013efficient} \cite{mikolov2013distributed}. Training of the Skipgram model does not involve dense matrix multiplications \ref{fig:skip} and that makes training also extremely efficient \cite{mikolov2013distributed}.
 
-\subsection{GloVe}
-GloVe (Global Vectors) \cite{pennington2014glove} model focuses more on the global statistics of the trained data. The main concept of this model is the observation that ratios of word-word co-occurrence probabilities have the potential for encoding meaning of words. This approach sequentially analyzes word contexts iterating on word windows across the corpus. The authors define $ P_{ij} = p(j|i) $ as the probability that the word $ w_j $ appears in the context of word $ w_i $. The authors
+%\subsection{GloVe}
+%GloVe (Global Vectors) \cite{pennington2014glove} model focuses more on the global statistics of the trained data. The %main concept of this model is the observation that ratios of word-word co-occurrence probabilities have the potential %for encoding meaning of words. This approach sequentially analyzes word contexts iterating on word windows across the %corpus. The authors define $ P_{ij} = p(j|i) $ as the probability that the word $ w_j $ appears in the context of word %$ w_i $. The authors
 
 \subsection{Fast-Text}
 FastText\cite{bojanowski2016enriching} combines concepts of CBOW (resp. Skip-Gram) architectures introduced earlier in Section \ref{sec:cbow} and \ref{sec:skip}. These include representing sentences with bag of words and bag of n-grams, as well as using subword information, and sharing information across classes through a hidden representation. 
@@ -83,7 +88,9 @@ FastText\cite{bojanowski2016enriching} combines concepts of CBOW (resp. Skip-Gra
 \subsection{Training data}
 We trained our models on two datasets in the Croatian language. We made the entire dump of Croatian Wikipedia - dated 08-2017 with approximately 275,000 articles. We have tokenized the text, removed nonalphanumeric tokens and extracted only sentences with at least 5 tokens. Resulting corpus has xy tokens. We merged data from Wikipedia with Croatian corpus presented in \cite{vsnajder2013building} that has 1.2B tokens. Resulting corpus has xy tokens and xy sentences. Such corpus has vocabulary of xy words with at least 10 occurences.
 
-For English version of data, we used Wikipedia dump from 02-2017. This dump has xy tokens and vocabulary of xy words. 
+For English version of data, we used Wikipedia dump from June 2016. This dump was made of 5,164,793 articles, has xy tokens and vocabulary of xy words. 
+
+We tested analogies and similarity corpuses for both languages with most frequent 300,000 words. 
 
 
 \begin{table}[!h]
@@ -111,19 +118,21 @@ Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two
 
 Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions.\\
 
-Semantic questions are divided into 7 group each, having around 30 - 100 word question pairs. Combination of each question pairs gives overall xy semantics questions:  
+Semantic questions are divided into 9 group, each having around 30 - 100 word question pairs. Combination of question pairs gives overall 36,880 semantics questions:  
 
 \begin{itemize}
 	\item[-] capital-common-countries
 	\item[-] chemical-elements
 	\item[-] city-state
 	\item[-] city-state-USA
+	\item[-] country-world
 	\item[-] currency-shortcut
+	\item[-] currency
 	\item[-] eu-cities-states
 	\item[-] family
 \end{itemize}
 
-Syntactic part of corpus is divided into xy group, consisting of xy questions: 
+Syntactic part of corpus is divided into 14 group, consisting of 78,205 questions: 
 \begin{itemize}
 	\item[-] jobs
 	\item[-] adjective-to-adverb
@@ -145,17 +154,40 @@ Syntactic part of corpus is divided into xy group, consisting of xy questions:
 
 \begin{table}[!h]
 	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|X|}
+		\begin{tabularx}{\columnwidth}{|l|X|X|X|X|}
 			
 			\hline
-			Level&Tools\\
+			\bf{Model}&\bf{CBOW}&\bf{Skip}&\bf{fastText-Skip}&\bf{fastText-CBOW}\\
 			\hline
-			Morphology & Pitrat Analyser\\
+			Capital &44.17 & 62.5 & 59.58& 21.25 \\
+			Chemical-elements &1.02 & 2.25 & 0.74 & 0.41\\
+			City-state & 22.11 & 37.89 & 47.63 & 46.32\\
+			City-state-USA & 5.78& 8.23 & 4.30 & 0.37\\
+			Country-world & 23.93& 44.49& 40.15 & 7.31\\
+			Currency & 4.68& 8.19&6.43 & 0.58\\
+			Currency-shortcut & 2.08 & 8.19 & 2.50 & 0.42\\
+			EU-cities-states & 21.59 & 41.95 & 42.33  & 6.16\\
+			Family & 34.83 & 41.82 & 42.72 & 34.76\\
 			\hline
-			Syntax & LFG Analyser (C-Structure)\\
+			Jobs & 68.94 & 64.06 & 88.54 & 95.45\\
+			Adj-to-adverb & 18.36 & 21.36 & 35.33 &62.01\\
+			Opposite & 17.34 & 18.05 & 59.03 & 86.10\\
+			Comparative & 34.90 & 33.57 & 43.22 & 41.46\\
+			Superlative & 33.22& 27.70 & 40.50 & 51.77\\
+			Nationality-man & 17.01& 23.87 & 60.05 & 62.13\\
+			Nationality-female & 14.38 & 55.66 & 57.77 & 53.98\\
+			Past-tense & 67.31 & 61.03 & 66.67 & 78.21\\
+			Plural & 37.12 & 44.65 & 44.24 & 35.10\\
+			Nouns-ant. & 12.70 & 10.96 & 10.80 & 21.24\\
+			Adjectives-ant. & 13.39 & 13.11 & 18.59 & 12.59\\
+			Verbs-antonyms & 9.18 & 6.18 & 7.25& 9.71\\
+			Verbs-pastFemale & 60.92 & 19.47 & 71.04 & 80.50\\
+			Verbs-pastMale & 66.68 & 62.89 & 76.04 & 85.04\\
 			\hline
-			Semantics & LFG F-Structures + Sowa's\\
-			& Conceptual Graphs\\
+			SEMANTICS & 16.60 & 28.54 & 25.94 & 7.76\\
+			SYNTACTIC & 37.06 & 35.63& 49.60 & 54.56\\
+			\hline
+			ALL & 32.03 & 33.89 & 43.83 & 43.13\\
 			\hline
 			
 		\end{tabularx}
@@ -167,21 +199,25 @@ Syntactic part of corpus is divided into xy group, consisting of xy questions:
 
 \begin{table}[!h]
 	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|X|}
-			
+		\begin{tabularx}{\columnwidth}{|l|ccc|}
 			\hline
-			Level&Tools\\
+			 & \multicolumn{3}{c|}{\bf English}\\
+			 \bf Models &WordSim353& RG65 & EN-analogies\\
+			 \hline
+			 CBOW& 57.94 & 68.69 & 69.98 (44.02)\\
+			 Skip-gram& 64.73 & 78.27 & 73.57 (46.28)\\
+			 fastText-Skip& 46.13& 76.31 & 68.27 (42.94)\\
+			 fastText-CBOW& 44.64& 73.64 & 76.58 (48.17)\\
 			\hline
-			Morphology & Pitrat Analyser\\
-			\hline
-			Syntax & LFG Analyser (C-Structure)\\
-			\hline
-			Semantics & LFG F-Structures + Sowa's\\
-			& Conceptual Graphs\\
+			& \multicolumn{3}{c|}{\bf Croatian}\\
+			 CBOW& xy& xy & 32.03 (19.19)\\
+			 Skip-gram& xy& xy & 33.89 (20.31)\\
+			 fastText-Skip& xy& xy & 43.83 (25.79)\\
+			 fastText-CBOW& xy& xy & 43.14 (25.79)\\
 			\hline
 			
 		\end{tabularx}
-		\caption{Syntactic questions}
+		\caption{Comparison with English models. Measurement in brackets gives the results including OOV questions}
 	\end{center}
 \end{table}
 
@@ -225,7 +261,9 @@ Syntactic part of corpus is divided into xy group, consisting of xy questions:
 		\caption{Total score}
 	\end{center}
 \end{table}
+In total we tested on 68,986 out of 115,085 questions, it means that almost 40\% question was unknown by model. All unknown questions were discarded from testing process. We tested Semantic group on 16,968 known questions and part of corpus testing Syntactic properties was measured on 52,018 questions. 
 
+Only 10 out of 353 question was unknown for WordSim353 corpus and all 65 questions of RG65 corpus were in vocabulary. Unknown words in WordSim353 we have represented as a vector averaged from 10 least common words in vocabulary.
 
 \section{Conclusion}
 
@@ -234,7 +272,6 @@ Syntactic part of corpus is divided into xy group, consisting of xy questions:
 \section{Acknowledgements}
 
 This work was supported by the project LO1506 of the Czech Ministry of Education, Youth and Sports and by Grant No. SGS-2016-018 Data and Software Engineering for Advanced Applications.
-Computational resources were provided by the CESNET LM2015042 and the CERIT Scientific Cloud LM2015085, provided under the programme "Projects of Large Research, Development, and Innovations Infrastructures.
 
 % \nocite{*}
 \section{Bibliographical References}

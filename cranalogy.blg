@@ -1,19 +1,19 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: cranalogy.aux
-White space in argument---line 22 of file cranalogy.aux
- : \citation{it
- :              corpus, arabic corpus, de corpus, cz corpus}
+White space in argument---line 23 of file cranalogy.aux
+ : \citation{it_corpus,
+ :                      arabic_corpus, de_corpus, cz_corpus}
 I'm skipping whatever remains of this command
 I couldn't open style file lrec.bst
----line 61 of file cranalogy.aux
+---line 60 of file cranalogy.aux
  : \bibstyle{lrec
  :               }
 I'm skipping whatever remains of this command
 I found no style file---while reading file cranalogy.aux
-You've used 18 entries,
+You've used 19 entries,
             0 wiz_defined-function locations,
-            111 strings with 999 characters,
+            112 strings with 1008 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
