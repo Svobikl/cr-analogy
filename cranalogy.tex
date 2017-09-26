@@ -18,6 +18,7 @@
 \usepackage{alltt}
 \usepackage{ctable}
 \usepackage{multirow}
+\usepackage{adjustbox}
 
 \newcommand{\secref}[1]{\StrSubstitute{\getrefnumber{#1}}{.}{ }}
 
@@ -118,46 +119,48 @@ Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two
 
 Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions.\\
 
-Semantic questions are divided into 9 group, each having around 30 - 100 word question pairs. Combination of question pairs gives overall 36,880 semantics questions:  
+Semantic questions are divided into 9 group, each having around 20 - 100 word question pairs. Combination of question pairs gives overall 36,880 semantics questions:  
 
 \begin{itemize}
-	\item[-] capital-common-countries
-	\item[-] chemical-elements
-	\item[-] city-state
-	\item[-] city-state-USA
-	\item[-] country-world
-	\item[-] currency-shortcut
-	\item[-] currency
-	\item[-] eu-cities-states
-	\item[-] family
+	\item[-] \texttt{capital-common-countries}: 
+	This group consist of 23 the most common countries. These countries were adopted from original Word2Vec analogies and having highest number of occurrences in text between all languages. 
+	\item[-] \texttt{chemical-elements}: Represents 119 pairs of chemical elements with their shortcut symbol (i.e. O - Oxygen).
+	\item[-] \texttt{city-state}: Gives 20 regions (states) inside the Croatia and gives one of city example in such region.
+	\item[-] \texttt{city-state-USA}: 67 pairs of cities and corresponding states in USA. This category is adopted from original English word analogy test.
+	\item[-] \texttt{country-world}: 118 pairs of countries with main cities from all over the world. Translated from original Word2Vec analogies.
+	\item[-] \texttt{currency-shortcut}: 20 pairs of state currencies with its shortcut name (i.e. Switzerland - CHF).
+	\item[-] \texttt{currency}: 20 pairs of states with their currencies (i.e. Japan - yen). Translated from original EN analogy corpus.
+	\item[-] \texttt{eu-cities-states}: 40 word pairs of states from EU and their corresponding main city (i.e. Belgium - Brussels)
+	\item[-] \texttt{family}: 41 word pairs with family relation in masculine vs feminine form (i.e. brother - sister)
 \end{itemize}
 
 Syntactic part of corpus is divided into 14 group, consisting of 78,205 questions: 
 \begin{itemize}
-	\item[-] jobs
-	\item[-] adjective-to-adverb
-	\item[-] opposite
-	\item[-] comparative
-	\item[-] superlative
-	\item[-] nationality-man
-	\item[-] nationality-female
-	\item[-] past-tense
-	\item[-] plural
-	\item[-] nouns-antonyms
-	\item[-] adjectives-antonyms
-	\item[-] verbs-antonyms
-	\item[-] verbs-pastToFemale
-	\item[-] verbs-pastToMale
+	\item[-] \texttt{jobs}: This category is language-specific, consist of 109 pairs of job positions in masculine$\times$  feminine form.
+	\item[-] \texttt{adjective-to-adverb}: 32 pairs of adjectives and its representatives in adverb form. 
+	\item[-] \texttt{opposite}: 29 pairs of adjectives with its opposites. This category collects words from which is easy to make its opposites usually with preposition "un" or "in", respective preposition "ne" in Croatian (i.e. certain - uncertain). Adopted from original EN word analogies. 
+	\item[-] \texttt{comparative}
+	\item[-] \texttt{superlative}
+	\item[-] \texttt{nationality-man}
+	\item[-] \texttt{nationality-female}
+	\item[-] \texttt{past-tense}
+	\item[-] \texttt{plural}
+	\item[-] \texttt{nouns-antonyms}
+	\item[-] \texttt{adjectives-antonyms}: Similar category to \emph{opposite}, it consists of 96 word pairs of adjectives and their antonyms. However, words are much more complex (i.e. good - bad).
+	\item[-] \texttt{verbs-antonyms}
+	\item[-] \texttt{verbs-pastToFemale}
+	\item[-] \texttt{verbs-pastToMale}
 \end{itemize}
 
 
 
 \begin{table}[!h]
 	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|X|X|X|X|}
+		\begin{adjustbox}{max width=0.48\textwidth}
+		\begin{tabular}{|l|c|c|c|c|}
 			
 			\hline
-			\bf{Model}&\bf{CBOW}&\bf{Skip}&\bf{fastText-Skip}&\bf{fastText-CBOW}\\
+			\bf{Model}&\bf{CBOW}&\bf{Skip-gram}&\bf{fastText-Skip}&\bf{fastText-CBOW}\\
 			\hline
 			Capital &44.17 & 62.5 & 59.58& 21.25 \\
 			Chemical-elements &1.02 & 2.25 & 0.74 & 0.41\\
@@ -184,22 +187,29 @@ Syntactic part of corpus is divided into 14 group, consisting of 78,205 question
 			Verbs-pastFemale & 60.92 & 19.47 & 71.04 & 80.50\\
 			Verbs-pastMale & 66.68 & 62.89 & 76.04 & 85.04\\
 			\hline
-			SEMANTICS & 16.60 & 28.54 & 25.94 & 7.76\\
-			SYNTACTIC & 37.06 & 35.63& 49.60 & 54.56\\
 			\hline
-			ALL & 32.03 & 33.89 & 43.83 & 43.13\\
+			SEMANTICS\_EN &  73.63 & 83.64 & 68.77 &68.27\\
+			SYNTACTIC\_EN & 67.55 & 66.8& 67.94 & 76.58\\
+			\hline
+			SEMANTICS\_HR & 16.60 & 28.54 & 25.94 & 7.76\\
+			SYNTACTIC\_HR & 37.06 & 35.63& 49.60 & 54.56\\
+			\hline
+			\hline
+			\bf ALL\_HR & 32.03 & 33.89 & 43.83 & 43.13\\
 			\hline
 			
-		\end{tabularx}
-		\caption{The caption of the table}
+		\end{tabular}
+		\end{adjustbox}
 	\end{center}
+	\caption{\label{tab:resultsHR} Detailed results of Croatian word analogy corpus.}
 \end{table}
 
 \section{Experiments}
 
 \begin{table}[!h]
 	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|ccc|}
+		\begin{adjustbox}{max width=0.45\textwidth}
+		\begin{tabular}{|l|ccc|}
 			\hline
 			 & \multicolumn{3}{c|}{\bf English}\\
 			 \bf Models &WordSim353& RG65 & EN-analogies\\
@@ -210,63 +220,29 @@ Syntactic part of corpus is divided into 14 group, consisting of 78,205 question
 			 fastText-CBOW& 44.64& 73.64 & 76.58 (48.17)\\
 			\hline
 			& \multicolumn{3}{c|}{\bf Croatian}\\
-			 CBOW& xy& xy & 32.03 (19.19)\\
-			 Skip-gram& xy& xy & 33.89 (20.31)\\
-			 fastText-Skip& xy& xy & 43.83 (25.79)\\
-			 fastText-CBOW& xy& xy & 43.14 (25.79)\\
+			 CBOW& 37.61& 52.01 & 32.03 (19.19)\\
+			 Skip-gram& 52.16 & 58.47 & 33.89 (20.31)\\
+			 fastText-Skip& 52.98& 64.31 & 43.83 (25.79)\\
+			 fastText-CBOW& 30.41 & 51.06 & 43.14 (25.79)\\
 			\hline
 			
-		\end{tabularx}
-		\caption{Comparison with English models. Measurement in brackets gives the results including OOV questions}
+		\end{tabular}
+		\end{adjustbox}
+		\caption{Comparison with English models. Measurement in brackets gives the results including OOV questions.}
 	\end{center}
 \end{table}
 
-
-\begin{table}[!h]
-	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|X|}
-			
-			\hline
-			Level&Tools\\
-			\hline
-			Morphology & Pitrat Analyser\\
-			\hline
-			Syntax & LFG Analyser (C-Structure)\\
-			\hline
-			Semantics & LFG F-Structures + Sowa's\\
-			& Conceptual Graphs\\
-			\hline
-			
-		\end{tabularx}
-		\caption{Semantic questions}
-	\end{center}
-\end{table}
-
-\begin{table}[!h]
-	\begin{center}
-		\begin{tabularx}{\columnwidth}{|l|X|}
-			
-			\hline
-			Level&Tools\\
-			\hline
-			Morphology & Pitrat Analyser\\
-			\hline
-			Syntax & LFG Analyser (C-Structure)\\
-			\hline
-			Semantics & LFG F-Structures + Sowa's\\
-			& Conceptual Graphs\\
-			\hline
-			
-		\end{tabularx}
-		\caption{Total score}
-	\end{center}
-\end{table}
 In total we tested on 68,986 out of 115,085 questions, it means that almost 40\% question was unknown by model. All unknown questions were discarded from testing process. We tested Semantic group on 16,968 known questions and part of corpus testing Syntactic properties was measured on 52,018 questions. 
 
-Only 10 out of 353 question was unknown for WordSim353 corpus and all 65 questions of RG65 corpus were in vocabulary. Unknown words in WordSim353 we have represented as a vector averaged from 10 least common words in vocabulary.
+Only 10 out of 353 question was unknown for \emph{WordSim353} corpus and all 65 questions of \emph{RG65} were in vocabulary. Unknown words in \emph{WordSim353} were represented as word vector averaged from 10 least common words in vocabulary.\\
+
+Semantic tests gives overall poor performance on all tested models, as we can see in table \ref{tab:resultsHR}, the opposite is true for English, where semantic tests gives usually similar score as syntactic tests. This behavior we already saw on Czech corpus presented in \cite{bibid}. It seems that free word order and other properties of highly inflected languages from Slavic family have a big impact on performance of current state-of-the-art word embeddings methods.\\
+From results of \emph{City-state} and \emph{City-state-USA} category it can be seen that knowledge of topic in training data has significant impact on performance of a model. We wanted to show differences between two similar categories in case we have insufficient amount of training data covering particular topic. Category \emph{City-state} is showing that model is able to carry such knowledge - if the topic is sufficiently represented in a training data, as it was with regions from Croatia mentioned in many articles on Croatian Wikipedia, but it was not a case with states from USA. All questions of \emph{City-state} were covered and only around 50\% of questions of \emph{City-state-USA} were in vocabulary. On categories \emph{Country-world} and \emph{EU-cities-states} it can be seen that there is no difference between knowledge about states and main cities from EU again state-city pairs from all over the world. Another very poor performance gives group \emph{Currency}, but this group is usually weak across all languages.\\
+
+Syntactic tests gives better performance than semantic oriented tests, but they still have significantly worse performance than on English. This part of corpus includes language-specific group of tests - such as \emph{Verbs-pastMale/Female}, \emph{Nationality-man/female}. Simple \emph{Past-tense} tests gives surprisingly high score - similarly it was also with Czech language \cite{}. We could say, that languages from Slavic family tends to have easier patterns for past tense. From language-specific groups we see that slightly better score is given in categories with word pairs in masculine form, that also corresponds with the fact that there is more articles written in masculine form in the training data.
 
 \section{Conclusion}
-
+We have shown that similarly to Czech, another representative of Slavic language also Croatian  
 \url{https://github.com/Svobikl/cr-analogy}
 
 \section{Acknowledgements}
