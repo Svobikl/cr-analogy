@@ -36,7 +36,7 @@
 \abstract{
 Many unsupervised learning techniques have been investigated to obtain useful word embedding representation. Research is focusing mostly on English and less on highly inflected languages from Slavic family.\\
 We derived new corpus from the original \emph{Word2vec} and added some of the specific linguistic aspect from Croatian language. 
-We compared two popular word representation models, \emph{Word2Vec} and \emph{Glove}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG65 corpuses to Croatian and made basic semantic measurements.\\
+We compared two popular word representation models, \emph{Word2Vec} and \emph{fastText}. Models has been trained on a new robust Croatian analogy corpus. We also translated WordSim353 and RG65 corpuses to Croatian and made basic semantic measurements.\\
 Results show that models are able to create meaningful word representation. However, this research has shown that free word order and the higher morphological complexity of Croatian language influences the quality of resulting word embeddings.
 }
 
@@ -50,7 +50,7 @@ Word representation based on distributional semantics \cite{bibid}, commonly ref
 
 It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP tasks, where Word Embeddings does not help much \cite{Andreas:2014}. 
 
-Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it_corpus, arabic_corpus, de_corpus, cz_corpus}, but there is still little attention to highly inflected languages from Slavic family. These languages are highly inflected and have a relatively free word order.
+Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it_corpus, arabic_corpus, de_corpus, cz_corpus}, but there is still a little attention to languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
 In this paper, we focus on Croatian word embeddings. To be able to compare different word embeddings methods, we created two dataset based on original WordSim353\cite{bibid} and RG65\cite{bibid} translated to Croatian.
 Except the similarity between words, we would like to explore other semantic and syntactic properties hidden in word embeddings. A new evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}.
@@ -115,11 +115,11 @@ We tested analogies and similarity corpuses for both languages with most frequen
 
 
 \section{Corpus}
-Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically the predicted one). 
+Original Word2Vec analogy  corpus is composed by 19,558 questions divided in two tested group : semantic and syntactic questions, e.g. king : man = woman : queen. Fourth word in question is typically the predicted one. 
 
 Our Croatian analogy corpus has 115,085 question divided in the same manner as for English into two tested group: semantic and syntactic questions.\\
 
-Semantic questions are divided into 9 group, each having around 20 - 100 word question pairs. Combination of question pairs gives overall 36,880 semantics questions:  
+Semantic questions are divided into 9 categories, each having around 20 - 100 word question pairs. Combination of question pairs gives overall 36,880 semantics questions:  
 
 \begin{itemize}
 	\item[-] \texttt{capital-common-countries}: 
@@ -134,22 +134,22 @@ Semantic questions are divided into 9 group, each having around 20 - 100 word qu
 	\item[-] \texttt{family}: 41 word pairs with family relation in masculine vs feminine form (i.e. brother - sister)
 \end{itemize}
 
-Syntactic part of corpus is divided into 14 group, consisting of 78,205 questions: 
+Syntactic part of corpus is divided into 14 categories, consisting of 78,205 questions: 
 \begin{itemize}
 	\item[-] \texttt{jobs}: This category is language-specific, consist of 109 pairs of job positions in masculine$\times$  feminine form.
 	\item[-] \texttt{adjective-to-adverb}: 32 pairs of adjectives and its representatives in adverb form. 
 	\item[-] \texttt{opposite}: 29 pairs of adjectives with its opposites. This category collects words from which is easy to make its opposites usually with preposition "un" or "in", respective preposition "ne" in Croatian (i.e. certain - uncertain). Adopted from original EN word analogies. 
-	\item[-] \texttt{comparative}
-	\item[-] \texttt{superlative}
-	\item[-] \texttt{nationality-man}
-	\item[-] \texttt{nationality-female}
-	\item[-] \texttt{past-tense}
-	\item[-] \texttt{plural}
-	\item[-] \texttt{nouns-antonyms}
+	\item[-] \texttt{comparative}: 77 pairs of adjectives and its comparative form (i.e. good - better).
+	\item[-] \texttt{superlative}: 77 pairs of adjectives and its superlative form. 
+	\item[-] \texttt{nationality-man}: 84 pairs of states and humans representing its nationalities in masculine form. (i.e. Switzerland - Swiss)
+	\item[-] \texttt{nationality-female}: 84 pairs of states and its nationalities in feminine form. This is language specific.
+	\item[-] \texttt{past-tense}: 40 pairs of verbs and its past tense form. 
+	\item[-] \texttt{plural}: 46 pairs of nouns and its plural form. 
+	\item[-] \texttt{nouns-antonyms}: 100 pairs of nouns and its antonyms. 
 	\item[-] \texttt{adjectives-antonyms}: Similar category to \emph{opposite}, it consists of 96 word pairs of adjectives and their antonyms. However, words are much more complex (i.e. good - bad).
-	\item[-] \texttt{verbs-antonyms}
-	\item[-] \texttt{verbs-pastToFemale}
-	\item[-] \texttt{verbs-pastToMale}
+	\item[-] \texttt{verbs-antonyms}: 51 pairs of verbs and its antonyms.
+	\item[-] \texttt{verbs-pastToFemale}: 83 pairs of verbs and its past tense in feminine form. This category is extended from category \emph{past-tense} and is language-specific.
+	\item[-] \texttt{verbs-pastToMale}: 83 pairs of verbs and its past tense masculine form. Category is same as past-tense, only its extended variation to be comparable with category \emph{verbs-pastToFemale}.
 \end{itemize}
 
 
@@ -232,14 +232,14 @@ Syntactic part of corpus is divided into 14 group, consisting of 78,205 question
 	\end{center}
 \end{table}
 
-In total we tested on 68,986 out of 115,085 questions, it means that almost 40\% question was unknown by model. All unknown questions were discarded from testing process. We tested Semantic group on 16,968 known questions and part of corpus testing Syntactic properties was measured on 52,018 questions. 
+In total we tested on 68,986 out of 115,085 questions, it means that almost 40\% question was unknown by model. All unknown questions were discarded from testing process. We tested Semantic group on 16,968 known questions and part of corpus testing syntactic properties was measured on 52,018 questions. 
 
 Only 10 out of 353 question was unknown for \emph{WordSim353} corpus and all 65 questions of \emph{RG65} were in vocabulary. Unknown words in \emph{WordSim353} were represented as word vector averaged from 10 least common words in vocabulary.\\
 
-Semantic tests gives overall poor performance on all tested models, as we can see in table \ref{tab:resultsHR}, the opposite is true for English, where semantic tests gives usually similar score as syntactic tests. This behavior we already saw on Czech corpus presented in \cite{bibid}. It seems that free word order and other properties of highly inflected languages from Slavic family have a big impact on performance of current state-of-the-art word embeddings methods.\\
-From results of \emph{City-state} and \emph{City-state-USA} category it can be seen that knowledge of topic in training data has significant impact on performance of a model. We wanted to show differences between two similar categories in case we have insufficient amount of training data covering particular topic. Category \emph{City-state} is showing that model is able to carry such knowledge - if the topic is sufficiently represented in a training data, as it was with regions from Croatia mentioned in many articles on Croatian Wikipedia, but it was not a case with states from USA. All questions of \emph{City-state} were covered and only around 50\% of questions of \emph{City-state-USA} were in vocabulary. On categories \emph{Country-world} and \emph{EU-cities-states} it can be seen that there is no difference between knowledge about states and main cities from EU again state-city pairs from all over the world. Another very poor performance gives group \emph{Currency}, but this group is usually weak across all languages.\\
+Semantic tests gives overall poor performance on all tested models, as we can see in table \ref{tab:resultsHR}, the opposite is true for English, where semantic tests gives usually similar score as syntactic tests. This behavior we already saw on Czech corpus presented in \cite{DBLPSvobodaB16}. It seems that free word order and other properties of highly inflected languages from Slavic family have a big impact on performance of current state-of-the-art word embeddings methods.\\
+From results of \emph{City-state} and \emph{City-state-USA} category it can be seen that knowledge of topic in training data has significant impact on performance of a model. We wanted to show differences between two similar categories in case we have insufficient amount of training data covering particular topic. Category \emph{City-state} is showing that model is able to carry such knowledge - if the topic is sufficiently represented in a training data, than model is able to carry this type of information. This behavior is seen in regions from Croatia mentioned in many articles on Croatian Wikipedia, but this was not a case with states from USA. All questions of \emph{City-state} were covered, but only around 50\% of questions in category \emph{City-state-USA} were in vocabulary. On categories \emph{Country-world} and \emph{EU-cities-states} it can be seen that there is no difference between knowledge about states and main cities from EU again state-city pairs from all over the world. Another very poor performance gives group \emph{Currency}, but this group is usually weak across all languages and shows the weaknesses of the model.\\
 
-Syntactic tests gives better performance than semantic oriented tests, but they still have significantly worse performance than on English. This part of corpus includes language-specific group of tests - such as \emph{Verbs-pastMale/Female}, \emph{Nationality-man/female}. Simple \emph{Past-tense} tests gives surprisingly high score - similarly it was also with Czech language \cite{}. We could say, that languages from Slavic family tends to have easier patterns for past tense. From language-specific groups we see that slightly better score is given in categories with word pairs in masculine form, that also corresponds with the fact that there is more articles written in masculine form in the training data.
+Syntactic tests gives better performance than semantic oriented tests, but they still have significantly worse performance rather than on English. This part of corpus includes language-specific group of tests - such as \emph{Verbs-pastMale/Female}, \emph{Nationality-man/female}. Simple \emph{Past-tense} tests gives surprisingly high score - similarly it was also with Czech language in \cite{DBLPSvobodaB16}. We could say, that languages from Slavic family tends to have easier patterns for past tense. From language-specific groups we see that slightly better score is given in categories with word pairs in masculine form, these results also corresponds with the fact that there is more articles written in masculine form in the training data.
 
 \section{Conclusion}
 We have shown that similarly to Czech, another representative of Slavic language also Croatian  
