@@ -46,9 +46,9 @@ Results show that models are able to create meaningful word representation. Howe
 
 \section{Introduction}
 
-Word representation based on distributional semantics \cite{bibid}, commonly referred to as Word Embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representation is to capture syntactic and semantic relationship between words. 
+Word representation based on distributional semantics \cite{bibid}, commonly referred to as Word Embeddings, represent words as vectors of real numbers from low-dimensional space. The goal of such representations is to capture syntactic and semantic relationship between words. 
 
-It was shown that the word vectors can be used for significant improving and simplifying of many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP tasks, where Word Embeddings does not help much \cite{Andreas:2014}. 
+It was shown that the word vectors can be used for significant improving and simplifying many NLP applications \cite{Collobert08aunified,DBLP:journals/corr/abs-1103-0398}. There are also NLP tasks, where Word Embeddings does not help much \cite{Andreas:2014}. 
 
 Most of work is focused on English. Recently the community has realized that the research should focus on other languages with rich morphology and different syntax \cite{it_corpus, arabic_corpus, de_corpus, cz_corpus}, but there is still a little attention to languages from Slavic family. These languages are highly inflected and have a relatively free word order.
 
@@ -67,13 +67,13 @@ There is a variety of datasets for measuring semantic relatedness between Englis
 $\vec{king} - \vec{man} = \vec{queen} - \vec{woman}  $.
 Evaluation scheme based on word analogies were presented in \cite{mikolov2013efficient}. 
 
-To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{zuanovic2014experiments} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
+To the best of our knowledge, only small portion of recent studies attempted evaluating Croatian word embeddings. In  \cite{zuanovic2014experiments} authors translated a few questions from English analogy corpus to Croatian to be able to evaluate their Neural based model. However, this translation was only made for a total of 350 questions. They used it only for their own simple tests and also did not publish such a small corpus.
 There is only one analogy corpus representing Slavic family language - Czech word analogy corpus presented in \cite{DBLPSvobodaB16}. 
 
 Many methods have been proposed to learn such word vector representations. One of the Neural Network based models for word vector representation which outperforms previous methods on word similarity tasks was introduced in \cite{Huang-2012}. Word Embeddings methods implemented in tool \emph{Word2Vec} \cite{mikolov2013efficient} and GloVe \cite{pennington2014glove} significantly outperform other methods for Word Embeddings. Word vector representations made by these methods have been successfully adapted on variety of core NLP tasks. Recent library \emph{FastText} \cite{bojanowski2016enriching} tool is derived from Word2Vec and enriches word embeddings vectors with subword information. 
 
 \section{Models}
-We experimented with state-of-the-art models used for generating word embeddings. Neural network based models CBOW and Skipgram from Word2Vec \cite{mikolov2013efficient} tool and model GloVe that focuses more on the global statistics of the trained data. We have also tested the most recent Fast-Text tool that promises better score for morphologically rich languages.
+We experimented with state-of-the-art models used for generating word embeddings. Neural network based models CBOW and Skipgram from Word2Vec \cite{mikolov2013efficient} tool and tool FastText that promises better score for morphologically rich languages.
 
 \subsection{CBOW} \label{sec:cbow}
 CBOW (Continuous Bag-of-Words) \cite{mikolov2013efficient} tries to predict the current word according to the small context window around the word. The architecture is similar to the feed-forward NNLP (Neural Network Language Model) which has been proposed in \cite{bengio2006neural}. The NNLM is computationally expensive between the projection and the hidden layer. Thus, CBOW proposed architecture, where the (non-linear) hidden layer is removed and projection layer is shared between all words. The word order in the context does not influence the projection (see Figure \ref{fig:cbow}). This architecture also proved low computational complexity.
@@ -153,6 +153,8 @@ Syntactic part of corpus is divided into 14 categories, consisting of 78,205 que
 	\item[-] \texttt{verbs-pastToFemale}: 83 pairs of verbs and its past tense in feminine form. This category is extended from category \emph{past-tense} and is language-specific.
 	\item[-] \texttt{verbs-pastToMale}: 83 pairs of verbs and its past tense masculine form. Category is same as past-tense, only its extended variation to be comparable with category \emph{verbs-pastToFemale}.
 \end{itemize}
+
+For basic comparison with English, we have translated state-of-the-art English word similarity data test sets WordSim353 \cite{} and RG65 \cite{}. These corpuses have 353 (respespective 64) word pairs. Each word pair is manually annotated with similarity. We kept similarities untouched. The words in WordSim are assessed on a scale from 0 to 10, in RG65 from 0 to 5.  
 
 
 
