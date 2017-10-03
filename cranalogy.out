@@ -1,13 +1,12 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
-\BOOKMARK [1][-]{section.3}{Models}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{CBOW}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Skip-gram}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Fast-Text}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.4}{Training data}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.5}{Parameters}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Corpus}{}% 9
-\BOOKMARK [1][-]{section.5}{Experiments}{}% 10
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 11
-\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 12
-\BOOKMARK [1][-]{section.8}{Bibliographical References}{}% 13
+\BOOKMARK [1][-]{section.2}{Proposed corpora}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Word Similarities Corpora}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Distributional Semantic Models}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{CBOW}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Skip-gram}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Fast-Text}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Experimental Results}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Training data}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 10
+\BOOKMARK [1][-]{section.6}{Acknowledgements}{}% 11
+\BOOKMARK [1][-]{section.7}{Bibliographical References}{}% 12

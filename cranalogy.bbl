@@ -1,0 +1,154 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Andreas and Klein}2014]{Andreas:2014}
+Andreas, J. and Klein, D.
+\newblock (2014).
+\newblock {How much do word embeddings encode about syntax?}
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics (Volume 2: Short Papers)}, pages 822--827,
+  Baltimore, Maryland, June. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Bengio \bgroup et al.\egroup
+  }2006]{bengio2006neural}
+Bengio, Y., Schwenk, H., Sen{\'e}cal, J.-S., Morin, F., and Gauvain, J.-L.
+\newblock (2006).
+\newblock Neural probabilistic language models.
+\newblock In {\em Innovations in Machine Learning}, pages 137--186. Springer.
+
+\bibitem[\protect\citename{Berardi \bgroup et al.\egroup
+  }2015]{berardi2015word}
+Berardi, G., Esuli, A., and Marcheggiani, D.
+\newblock (2015).
+\newblock Word embeddings go to italy: A comparison of models and training
+  datasets.
+\newblock In {\em IIR}.
+
+\bibitem[\protect\citename{Bojanowski \bgroup et al.\egroup
+  }2017]{bojanowski2016enriching}
+Bojanowski, P., Grave, E., Joulin, A., and Mikolov, T.
+\newblock (2017).
+\newblock Enriching word vectors with subword information.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  5:135--146.
+
+\bibitem[\protect\citename{Charles}2000]{Charles2000}
+Charles, W.~G.
+\newblock (2000).
+\newblock Contextual correlates of meaning.
+\newblock {\em Applied Psycholinguistics}, 21(04):505--524.
+
+\bibitem[\protect\citename{Collobert and Weston}2008]{Collobert08aunified}
+Collobert, R. and Weston, J.
+\newblock (2008).
+\newblock A unified architecture for natural language processing: Deep neural
+  networks with multitask learning.
+
+\bibitem[\protect\citename{Collobert \bgroup et al.\egroup
+  }2011]{DBLP:journals/corr/abs-1103-0398}
+Collobert, R., Weston, J., Bottou, L., Karlen, M., Kavukcuoglu, K., and Kuksa,
+  P.~P.
+\newblock (2011).
+\newblock Natural language processing (almost) from scratch.
+\newblock {\em CoRR}, abs/1103.0398.
+
+\bibitem[\protect\citename{Elrazzaz \bgroup et al.\egroup
+  }2017]{elrazzaz2017methodical}
+Elrazzaz, M., Elbassuoni, S., Shaban, K., and Helwe, C.
+\newblock (2017).
+\newblock Methodical evaluation of arabic word embeddings.
+\newblock In {\em Proceedings of the 55th Annual Meeting of the Association for
+  Computational Linguistics (Volume 2: Short Papers)}, volume~2, pages
+  454--458.
+
+\bibitem[\protect\citename{Finkelstein \bgroup et al.\egroup }2002]{ws353}
+Finkelstein, L., Gabrilovich, E., Matias, Y., Rivlin, E., Solan, Z., Wolfman,
+  G., and Ruppin, E.
+\newblock (2002).
+\newblock {Placing search in context: The concept revisited}.
+\newblock {\em {ACM} Transactions on Information Systems}, 20(1):116--131.
+
+\bibitem[\protect\citename{Harris}1954]{Harris:1954}
+Harris, Z.
+\newblock (1954).
+\newblock Distributional structure.
+\newblock {\em Word}, 10(23):146--162.
+
+\bibitem[\protect\citename{Huang \bgroup et al.\egroup }2012]{Huang-2012}
+Huang, E.~H., Socher, R., Manning, C.~D., and Ng, A.~Y.
+\newblock (2012).
+\newblock Improving word representations via global context and multiple word
+  prototypes.
+\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
+  Computational Linguistics: Long Papers - Volume 1}, ACL '12, pages 873--882,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{K{\"o}per \bgroup et al.\egroup
+  }2015]{koper2015multilingual}
+K{\"o}per, M., Scheible, C., and im~Walde, S.~S.
+\newblock (2015).
+\newblock Multilingual reliability and" semantic" structure of continuous word
+  spaces.
+\newblock In {\em IWCS}, pages 40--45.
+
+\bibitem[\protect\citename{Luong \bgroup et al.\egroup
+  }2013]{Luong-etal:conll13:morpho}
+Luong, M.-T., Socher, R., and Manning, C.~D.
+\newblock (2013).
+\newblock Better word representations with recursive neural networks for
+  morphology.
+\newblock In {\em CoNLL}, Sofia, Bulgaria.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013a]{mikolov2013efficient}
+Mikolov, T., Chen, K., Corrado, G., and Dean, J.
+\newblock (2013a).
+\newblock Efficient estimation of word representations in vector space.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013b]{mikolov2013distributed}
+Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., and Dean, J.
+\newblock (2013b).
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  3111--3119.
+
+\bibitem[\protect\citename{Pennington \bgroup et al.\egroup
+  }2014]{pennington2014glove}
+Pennington, J., Socher, R., and Manning, C.~D.
+\newblock (2014).
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 1532--1543.
+
+\bibitem[\protect\citename{Rubenstein and
+  Goodenough}1965]{RubensteinGoodenough65}
+Rubenstein, H. and Goodenough, J.~B.
+\newblock (1965).
+\newblock {Contextual correlates of synonymy}.
+\newblock {\em Communications of the ACM}, 8(10):627--633, October.
+
+\bibitem[\protect\citename{{\v{S}}najder \bgroup et al.\egroup
+  }2013]{vsnajder2013building}
+{\v{S}}najder, J., Pad{\'o}, S., and Agi{\'c}, {\v{Z}}.
+\newblock (2013).
+\newblock Building and evaluating a distributional memory for croatian.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics (Volume 2: Short Papers)}, volume~2, pages
+  784--789.
+
+\bibitem[\protect\citename{Svoboda and Brychc{\'{\i}}n}2016]{DBLPSvobodaB16}
+Svoboda, L. and Brychc{\'{\i}}n, T.
+\newblock (2016).
+\newblock New word analogy corpus for exploring embeddings of czech words.
+\newblock {\em CoRR}, abs/1608.00789.
+
+\bibitem[\protect\citename{Zuanovic \bgroup et al.\egroup
+  }2014]{zuanovic2014experiments}
+Zuanovic, L., Karan, M., and {\v{S}}najder, J.
+\newblock (2014).
+\newblock Experiments with neural word embeddings for croatian.
+\newblock In {\em Proceedings of the 9th Language Technologies Conference},
+  pages 69--72.
+
+\end{thebibliography}

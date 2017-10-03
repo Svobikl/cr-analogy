@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  25 SEP 2017 17:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.1)  3 OCT 2017 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -395,54 +395,93 @@ Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen158
 )
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen159
+\tc@lly=\dimen160
+\tc@urx=\dimen161
+\tc@ury=\dimen162
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen163
+\adjbox@Height=\dimen164
+\adjbox@Depth=\dimen165
+\adjbox@Totalheight=\dimen166
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count111
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count112
+\@vwid@loff=\dimen167
+\@vwid@roff=\dimen168
+))
 (./cranalogy.aux)
 \openout1 = `cranalogy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen159
-\scratchbox=\box28
-\nofMPsegments=\count112
-\nofMParguments=\count113
+\scratchcounter=\count113
+\scratchdimen=\dimen169
+\scratchbox=\box30
+\nofMPsegments=\count114
+\nofMParguments=\count115
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen160
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen170
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks29
 )
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 42.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count117
+\c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (./cranalogy.out) (./cranalogy.out)
 \@outlinefile=\write5
@@ -452,257 +491,163 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+
+Underfull \hbox (badness 1817) in paragraph at lines 58--59
+[]\OT1/ptm/m/n/10 Compare dif-fer-ent word em-bed-dings meth-ods on
+ []
 
 
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 48.
+Underfull \hbox (badness 3623) in paragraph at lines 59--61
+[]\OT1/ptm/m/n/10 For the pur-poses of the word em-bed-dings ex-
+ []
 
 
-LaTeX Warning: Citation `Collobert08aunified' on page 1 undefined on input line
- 50.
+Underfull \hbox (badness 1377) in paragraph at lines 59--61
+\OT1/ptm/m/n/10 per-i-ments, we cre-ated three new datasets. Two
+ []
 
 
-LaTeX Warning: Citation `DBLP:journals/corr/abs-1103-0398' on page 1 undefined 
-on input line 50.
+Underfull \hbox (badness 6316) in paragraph at lines 59--61
+\OT1/ptm/m/n/10 ba-sic word sim-i-lar-ity cor-pora based on orig-i-
+ []
 
 
-LaTeX Warning: Citation `Andreas:2014' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Citation `it_corpus' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation ` arabic_corpus' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation ` de_corpus' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation ` cz_corpus' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Citation `bibid' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 55.
-
-
-LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 63.
-
-
-LaTeX Warning: Citation `Charles2000' on page 1 undefined on input line 63.
-
-
-LaTeX Warning: Citation `ws353' on page 1 undefined on input line 65.
-
-
-LaTeX Warning: Citation `RubensteinGoodenough65' on page 1 undefined on input l
-ine 65.
-
-
-LaTeX Warning: Citation `Luong-etal:conll13:morpho' on page 1 undefined on inpu
-t line 65.
+Underfull \hbox (badness 7362) in paragraph at lines 59--61
+\OT1/ptm/m/n/10 nal Word-Sim353([]Finkelstein et al., 2002[]) and
+ []
 
 
 LaTeX Warning: Citation `Huang:2012:IWR:2390524.2390645' on page 1 undefined on
- input line 65.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 65.
-
-
-LaTeX Warning: Citation `zuanovic2014experiments' on page 1 undefined on input 
-line 67.
-
-
-LaTeX Warning: Citation `DBLPSvobodaB16' on page 1 undefined on input line 68.
-
-
-LaTeX Warning: Citation `Huang-2012' on page 1 undefined on input line 70.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 70.
-
-
-LaTeX Warning: Citation `pennington2014glove' on page 1 undefined on input line
- 70.
-
-
-LaTeX Warning: Citation `bojanowski2016enriching' on page 1 undefined on input 
-line 70.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 73.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 1 undefined on input lin
-e 76.
-
-
-LaTeX Warning: Citation `bengio2006neural' on page 1 undefined on input line 76
-.
-
-
-LaTeX Warning: Reference `fig:cbow' on page 1 undefined on input line 76.
+ input line 67.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-
-LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 79.
-
-
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 79.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 2 undefined on input lin
-e 79.
-
-
-LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 79.
-
-
-LaTeX Warning: Reference `fig:skip' on page 2 undefined on input line 79.
-
-
-LaTeX Warning: Citation `mikolov2013distributed' on page 2 undefined on input l
-ine 79.
-
-
-LaTeX Warning: Citation `bojanowski2016enriching' on page 2 undefined on input 
-line 85.
-
-
-LaTeX Warning: Citation `vsnajder2013building' on page 2 undefined on input lin
-e 89.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]|\OT1/ptm/m/n/10 Vocabulary
- []
-
-
-Overfull \hbox (2.43956pt too wide) in paragraph at lines 107--107
-[]|\OT1/ptm/m/n/10 829,250,940| 
- []
-
-
-Overfull \hbox (2.43956pt too wide) in paragraph at lines 107--107
-[]|\OT1/ptm/m/n/10 829,250,940| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
-Overfull \hbox (7.1392pt too wide) in paragraph at lines 193--193
-[]|\OT1/ptm/b/n/10 CBOW| 
- []
-
-
-Overfull \hbox (13.36908pt too wide) in paragraph at lines 193--193
-[]|\OT1/ptm/b/n/10 fastText-
- []
-
-
-Overfull \hbox (13.36908pt too wide) in paragraph at lines 193--193
-[]|\OT1/ptm/b/n/10 fastText-
- []
-
-
-Overfull \hbox (7.1392pt too wide) in paragraph at lines 193--193
-\OT1/ptm/b/n/10 CBOW| 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (9.67738pt too wide) in alignment at lines 219--219
-[][][][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 270.
-
-
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./cranalogy.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+)
+Underfull \hbox (badness 1019) in paragraph at lines 107--108
+[]\OT1/pcr/m/n/10 nouns-antonyms\OT1/ptm/m/n/10 : 100 pairs of nouns and its
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 109--110
+[]\OT1/pcr/m/n/10 verbs-antonyms\OT1/ptm/m/n/10 : 51 pairs of verbs and its
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 114.
+[2]
+Underfull \hbox (badness 10000) in alignment at lines 157--157
+[][][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 241--242
+\OT1/ptm/m/n/10 Un-known words in \OT1/ptm/m/it/10 Word-Sim353 \OT1/ptm/m/n/10 
+were rep-re-sented as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 243--245
+\OT1/ptm/m/n/10 par-tic-u-lar topic. Cat-e-gory \OT1/ptm/m/it/10 City-state \OT
+1/ptm/m/n/10 is show-ing that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
 
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+Underfull \hbox (badness 1997) in paragraph at lines 251--252
+\OT1/pcr/m/n/10 / / github . com / Svobikl / cr-[]analogy$[] \OT1/ptm/m/n/10 Th
+ese are
+ []
+
+(./cranalogy.bbl
+Underfull \hbox (badness 2980) in paragraph at lines 48--53
+[]\OT1/ptm/m/n/10 Collobert, R., We-ston, J., Bot-tou, L., Karlen, M.,
+ []
+
+[4]
+Underfull \hbox (badness 4048) in paragraph at lines 71--75
+[]\OT1/ptm/m/n/10 Harris, Z.  (1954).  Dis-tri-bu-tional struc-ture.  \OT1/ptm/
+m/it/10 Word\OT1/ptm/m/n/10 ,
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+ [5
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./cranalogy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `cranalogy.out' has not changed.
-(rerunfilecheck)             Checksum: C34C249DFF17FF01954C867236ACA5BD;673.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+(rerunfilecheck)             Checksum: 692D655DF98551C202A278E7816927EE;683.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 8237 strings out of 494985
- 123556 string characters out of 6180357
- 246645 words of memory out of 5000000
- 11289 multiletter control sequences out of 15000+600000
- 20730 words of font info for 44 fonts, out of 8000000 for 9000
+ 8816 strings out of 494985
+ 133306 string characters out of 6180357
+ 252885 words of memory out of 5000000
+ 11812 multiletter control sequences out of 15000+600000
+ 25375 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,10n,75p,939b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,75p,1397b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cranalogy.pdf (3 pages, 81243 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cranalogy.pdf (5 pages, 139862 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
