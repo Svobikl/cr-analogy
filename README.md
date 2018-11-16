@@ -1,14 +1,27 @@
 # cr-analogy
 
 Download HR corpus for training here: 
-'''
+```
 https://uloz.to/!MeZ0BN3JkU7R/corpus-txt-zip
-'''
+```
+
+
 Analogy corpus is in folder "data". 
 
 If you decide to use HR corpus, or analogy test data,, please cite the paper. The BibTeX format is:
 
-
+@inproceedings{DBLP:conf/lrec/SvobodaB18,
+  author    = {Luk{\'{a}}s Svoboda and
+               Slobodan Beliga},
+  title     = {Evaluation of Croatian Word Embeddings},
+  booktitle = {Proceedings of the Eleventh International Conference on Language Resources
+               and Evaluation, {LREC} 2018, Miyazaki, Japan, May 7-12, 2018.},
+  year      = {2018},
+  crossref  = {DBLP:conf/lrec/2018},
+  timestamp = {Fri, 18 May 2018 10:35:14 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/lrec/SvobodaB18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 
 
 ### Reference
