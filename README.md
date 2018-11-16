@@ -1,11 +1,13 @@
 # cr-analogy
 
-Download here: 
+Download HR corpus for training here: 
 '''
 https://uloz.to/!MeZ0BN3JkU7R/corpus-txt-zip
 '''
+Analogy corpus is in folder "data". 
 
 
+### Reference
 Corpus is merged from Wikipedia data plus fHrWaC - Filtered Croatian Web Corpus (hrWaC). 
 
 
