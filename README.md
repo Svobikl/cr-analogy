@@ -10,6 +10,7 @@ Analogy corpus is in folder "data".
 
 If you decide to use HR corpus, or analogy test data,, please cite the paper. The BibTeX format is:
 
+```
 @inproceedings{DBLP:conf/lrec/SvobodaB18,
   author    = {Luk{\'{a}}s Svoboda and
                Slobodan Beliga},
@@ -22,6 +23,7 @@ If you decide to use HR corpus, or analogy test data,, please cite the paper. Th
   biburl    = {https://dblp.org/rec/bib/conf/lrec/SvobodaB18},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+```
 
 
 ### Reference
