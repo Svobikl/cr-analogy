@@ -6,6 +6,10 @@ https://uloz.to/!MeZ0BN3JkU7R/corpus-txt-zip
 '''
 Analogy corpus is in folder "data". 
 
+If you decide to use HR corpus, or analogy test data,, please cite the paper. The BibTeX format is:
+
+
+
 
 ### Reference
 Corpus is merged from Wikipedia data plus fHrWaC - Filtered Croatian Web Corpus (hrWaC). 
