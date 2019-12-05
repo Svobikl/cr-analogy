@@ -1,6 +1,6 @@
 # cr-analogy
 
-Download HR corpus for training here (or directly from this GitHub repository - check the folder "data"): 
+Download HR corpus for training here: 
 ```
 https://uloz.to/!MeZ0BN3JkU7R/corpus-txt-zip
 ```
