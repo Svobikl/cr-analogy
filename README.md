@@ -2,7 +2,7 @@
 
 Download HR corpus for training here: 
 ```
-https://uloz.to/!MeZ0BN3JkU7R/corpus-txt-zip
+https://drive.google.com/drive/folders/1gVaQ3WZNek8O4u0pGWFeXAcH1KgFiW-Y?usp=sharing
 ```
 
 
